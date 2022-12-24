@@ -11,5 +11,5 @@
 2. Go to `app` directory: `cd app`
 
 3. Run your web app: `python run.py`
-
+    - and then go to : http://localhost:3000
 4. Click the `PREVIEW` button to open the homepage
