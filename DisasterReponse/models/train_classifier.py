@@ -33,7 +33,7 @@ def load_data(database_filepath):
     Nothing
     """
     
-    #load punkt from wordnet
+    #load punkt sentences tokenize
     nltk.download(['punkt', 'wordnet'])
 
 
@@ -106,7 +106,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
     y_pred = pipeline.predict(X_test)
 
-    for index, column in enumerate(Y.columns.values):
+    for index, column in enumerate(category_names.values):
         print(column, classification_report(y_test[column], y_pred[:, index]))
 
 
