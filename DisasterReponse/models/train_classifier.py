@@ -21,6 +21,18 @@ import pickle
 
 
 def load_data(database_filepath):
+    """Load data from disk
+    
+    Parameters
+    ----------
+    database_filepath : str
+        The file location of the database
+    
+    Returns
+    -------
+    Nothing
+    """
+    
     #load punkt from wordnet
     nltk.download(['punkt', 'wordnet'])
 
@@ -34,8 +46,16 @@ def load_data(database_filepath):
 
 
 def tokenize(text):
-    """
-    Remove punctuation chars
+    """Remove punctuation chars
+
+    Parameters
+    ----------
+    text : str
+        The corpus need to be processed
+    
+    Returns
+    -------
+    Nothing
     """
     
     tokens = word_tokenize(text)
@@ -49,6 +69,12 @@ def tokenize(text):
     return clean_tokens   
 
 def build_model():
+    """Build pipeline
+
+    Returns
+    -------
+    Nothing
+    """
 
     pipeline = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
@@ -60,6 +86,23 @@ def build_model():
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
+    """Evaluate the model
+
+    Parameters
+    ----------
+    model : estimator
+        The model to evaluate
+    X_test : matrix
+        X elements for testing
+    Y_test : matrix
+        Y elements for testing
+    category_names : Columns
+        Columns
+    
+    Returns
+    -------
+    Nothing
+    """
 
     y_pred = pipeline.predict(X_test)
 
@@ -68,6 +111,19 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
+    """Save the model
+
+    Parameters
+    ----------
+    model : estimator
+        The model to save
+    model_filepath : str
+        The path to save the model
+    
+    Returns
+    -------
+    Nothing
+    """
 
     pickle.dump(cv.best_estimator_, open("disater_model.pkl", "wb"))
 
@@ -97,7 +153,7 @@ def main():
         print('Please provide the filepath of the disaster messages database '\
               'as the first argument and the filepath of the pickle file to '\
               'save the model to as the second argument. \n\nExample: python '\
-              'train_classifier.py ../data/DisasterResponse.db classifier.pkl')
+              'train_classifier.py ../data/DisasterResponse_t.db disater_model.pkl')
 
 
 if __name__ == '__main__':

@@ -15,6 +15,17 @@ import joblib
 app = Flask(__name__)
 
 def tokenize(text):
+    """Remove punctuation chars
+
+    Parameters
+    ----------
+    text : str
+        The corpus need to be processed
+    
+    Returns
+    -------
+    Nothing
+    """
     tokens = word_tokenize(text)
     lemmatizer = WordNetLemmatizer()
 

@@ -3,8 +3,20 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 def load_data(messages_filepath, categories_filepath):
+    """Load message and categories data from disk
+    
+    Parameters
+    ----------
+    messages_filepath : str
+        The file location of the messages
+    categories_filepath : str
+        The file location of the messages
+
+    Returns
+    -------
+    Nothing
     """
-    """
+
     # load messages dataset
     messages = pd.read_csv("messages.csv")
     messages.head()
@@ -19,7 +31,16 @@ def load_data(messages_filepath, categories_filepath):
 
 
 def clean_data(df):
-    """
+    """Clean the data
+    
+    Parameters
+    ----------
+    df : Dataframe
+        Dataframe to process
+    
+    Returns
+    -------
+    Nothing
     """
     # create a dataframe of the 36 individual category columns
     categories = df["categories"].str.split(';', expand=True)
@@ -67,6 +88,20 @@ def clean_data(df):
     df.duplicated().sum()
 
 def save_data(df, database_filename):
+    """Save the dataframe to db file
+
+    Parameters
+    ----------
+    df : Dataframe
+        Dataframe to save
+    database_filename : str
+        The path to save the dataframe
+    
+    Returns
+    -------
+    Nothing
+    """
+
     engine = create_engine('sqlite:///DisasterResponse_t.db')
     df.to_sql('DisasterResponseTable', engine, index=False)
 
