@@ -2,6 +2,7 @@ import sys
 import pandas as pd
 from sqlalchemy import create_engine
 
+
 def load_data(messages_filepath, categories_filepath):
     """Load message and categories data from disk
     
@@ -18,17 +19,18 @@ def load_data(messages_filepath, categories_filepath):
     """
 
     # load messages dataset
-    messages = pd.read_csv("messages.csv")
+    messages = pd.read_csv("data/messages.csv")
     messages.head()
 
     # load categories dataset
-    categories = pd.read_csv("categories.csv")
+    categories = pd.read_csv("data/categories.csv")
     categories.head()
 
     # merge datasets
     df = pd.merge(messages, categories, on="id")
     df.head()
-
+    
+    return df
 
 def clean_data(df):
     """Clean the data
@@ -87,6 +89,8 @@ def clean_data(df):
     # check number of duplicates
     df.duplicated().sum()
 
+    return df
+    
 def save_data(df, database_filename):
     """Save the dataframe to db file
 
@@ -104,7 +108,6 @@ def save_data(df, database_filename):
 
     engine = create_engine('sqlite:///DisasterResponse_t.db')
     df.to_sql('DisasterResponseTable', engine, index=False)
-
 
 def main():
     if len(sys.argv) == 4:

@@ -42,8 +42,8 @@ def load_data(database_filepath):
     df = pd.read_sql_table('DisasterResponseTable', engine)
     X = df['message']
     Y = df.iloc[:, 4:]
-    Y.columns
 
+    return X, Y, Y.columns
 
 def tokenize(text):
     """Remove punctuation chars
