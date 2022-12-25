@@ -73,7 +73,8 @@ def build_model():
 
     Returns
     -------
-    Nothing
+    pipeline:
+        Pipeline
     """
 
     pipeline = Pipeline([
@@ -83,7 +84,6 @@ def build_model():
     ])
     
     return pipeline
-
 
 def evaluate_model(model, X_test, Y_test, category_names):
     """Evaluate the model
@@ -103,12 +103,12 @@ def evaluate_model(model, X_test, Y_test, category_names):
     -------
     Nothing
     """
+    pipeline = build_model()
 
     y_pred = pipeline.predict(X_test)
 
     for index, column in enumerate(category_names.values):
         print(column, classification_report(y_test[column], y_pred[:, index]))
-
 
 def save_model(model, model_filepath):
     """Save the model
@@ -126,7 +126,6 @@ def save_model(model, model_filepath):
     """
 
     pickle.dump(cv.best_estimator_, open("disater_model.pkl", "wb"))
-
 
 def main():
     if len(sys.argv) == 3:
@@ -154,7 +153,6 @@ def main():
               'as the first argument and the filepath of the pickle file to '\
               'save the model to as the second argument. \n\nExample: python '\
               'train_classifier.py ../data/DisasterResponse_t.db disater_model.pkl')
-
 
 if __name__ == '__main__':
     main()
