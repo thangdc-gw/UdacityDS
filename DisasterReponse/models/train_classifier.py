@@ -106,7 +106,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     y_pred = model.predict(X_test)
 
     for index, column in enumerate(category_names.values):
-        print(column, classification_report(y_test[column], y_pred[:, index]))
+        print(column, classification_report(Y_test[column], y_pred[:, index]))
 
 def save_model(model, model_filepath):
     """Save the model
@@ -127,7 +127,7 @@ def save_model(model, model_filepath):
         # 'tfidf__smooth_idf': [True, False],
         # 'vect__max_df': (0.5, 0.75, 1.0),
         # 'vect__max_features': (None, 5000, 10000),
-        # 'clf__estimator__n_estimators': [50, 100],
+        'clf__estimator__n_estimators': [50, 100],
         'clf__estimator__min_samples_split': [2, 4]
     }
     cv = GridSearchCV(model, param_grid=parameters)
@@ -150,7 +150,7 @@ def main():
         evaluate_model(model, X_test, Y_test, category_names)
 
         print('Saving model...\n    MODEL: {}'.format(model_filepath))
-        save_model(model, "disater_model.pkl")
+        save_model(model, model_filepath)
 
         print('Trained model saved!')
 
