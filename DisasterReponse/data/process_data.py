@@ -67,9 +67,10 @@ def clean_data(df):
         
         # convert column from string to numeric
         categories[column] = categories[column].astype(int)
-        if (categories[column] > 1):
-            categories[column] = 1
-            
+        if (categories[column][1] > 1):
+            print("Found something")
+            categories[column][1] = 1
+
     categories.head()
 
 
