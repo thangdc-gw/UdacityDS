@@ -103,9 +103,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     -------
     Nothing
     """
-    pipeline = build_model()
-
-    y_pred = pipeline.predict(X_test)
+    y_pred = model.predict(X_test)
 
     for index, column in enumerate(category_names.values):
         print(column, classification_report(y_test[column], y_pred[:, index]))
