@@ -13140,9 +13140,9 @@ div#notebook {
 <p>It's very cool that we have the data. I'm a bit fan of movies and TV shows as well. So we will dig into it and find out more interesting information.</p>
 <p>I try to find the answers to these questions:</p>
 <ul>
-<li><p>What are the oldest movies/TV Shows on Netflix? (Given 10)</p>
+<li><p>What are the oldest movies/TV Shows on Netflix? (Given 5)</p>
 </li>
-<li><p>How many Movies/TV Shows released each year?</p>
+<li><p>Top 10 countries where most of TV Shows/Movies produced?</p>
 </li>
 <li><p>How many movies that "Cameron Diaz" acted in?</p>
 </li>
@@ -13161,7 +13161,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[128]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
@@ -13184,7 +13184,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[129]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load the data</span>
@@ -13204,7 +13204,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[129]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -13338,7 +13338,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[130]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># List data information</span>
@@ -13386,7 +13386,7 @@ memory usage: 825.7+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Stats of data</span>
@@ -13403,7 +13403,7 @@ memory usage: 825.7+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[131]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13475,7 +13475,7 @@ memory usage: 825.7+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[132]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Mean of null values</span>
@@ -13492,7 +13492,7 @@ memory usage: 825.7+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[132]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13521,7 +13521,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[133]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Data size</span>
@@ -13538,7 +13538,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[133]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13555,7 +13555,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[134]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We would like to know null values for each column</span>
@@ -13572,7 +13572,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[134]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13601,7 +13601,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[135]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -13617,7 +13617,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[135]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13634,991 +13634,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[136]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TV Shows/ Movies released from the oldest year</span>
-<span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;release_year&quot;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[136]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>show_id</th>
-      <th>type</th>
-      <th>title</th>
-      <th>director</th>
-      <th>cast</th>
-      <th>country</th>
-      <th>date_added</th>
-      <th>release_year</th>
-      <th>rating</th>
-      <th>duration</th>
-      <th>listed_in</th>
-      <th>description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>4250</th>
-      <td>s4251</td>
-      <td>TV Show</td>
-      <td>Pioneers: First Women Filmmakers*</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>December 30, 2018</td>
-      <td>1925</td>
-      <td>TV-14</td>
-      <td>1 Season</td>
-      <td>TV Shows</td>
-      <td>This collection restores films from women who ...</td>
-    </tr>
-    <tr>
-      <th>7790</th>
-      <td>s7791</td>
-      <td>Movie</td>
-      <td>Prelude to War</td>
-      <td>Frank Capra</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1942</td>
-      <td>TV-14</td>
-      <td>52 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>Frank Capra's documentary chronicles the rise ...</td>
-    </tr>
-    <tr>
-      <th>8205</th>
-      <td>s8206</td>
-      <td>Movie</td>
-      <td>The Battle of Midway</td>
-      <td>John Ford</td>
-      <td>Henry Fonda, Jane Darwell</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1942</td>
-      <td>TV-14</td>
-      <td>18 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>Director John Ford captures combat footage of ...</td>
-    </tr>
-    <tr>
-      <th>8660</th>
-      <td>s8661</td>
-      <td>Movie</td>
-      <td>Undercover: How to Operate Behind Enemy Lines</td>
-      <td>John Ford</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1943</td>
-      <td>TV-PG</td>
-      <td>61 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>This World War II-era training film dramatizes...</td>
-    </tr>
-    <tr>
-      <th>8739</th>
-      <td>s8740</td>
-      <td>Movie</td>
-      <td>Why We Fight: The Battle of Russia</td>
-      <td>Frank Capra, Anatole Litvak</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1943</td>
-      <td>TV-PG</td>
-      <td>82 min</td>
-      <td>Documentaries</td>
-      <td>This installment of Frank Capra's acclaimed do...</td>
-    </tr>
-    <tr>
-      <th>8763</th>
-      <td>s8764</td>
-      <td>Movie</td>
-      <td>WWII: Report from the Aleutians</td>
-      <td>John Huston</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1943</td>
-      <td>TV-PG</td>
-      <td>45 min</td>
-      <td>Documentaries</td>
-      <td>Filmmaker John Huston narrates this Oscar-nomi...</td>
-    </tr>
-    <tr>
-      <th>8640</th>
-      <td>s8641</td>
-      <td>Movie</td>
-      <td>Tunisian Victory</td>
-      <td>Frank Capra, John Huston, Hugh Stewart, Roy Bo...</td>
-      <td>Burgess Meredith</td>
-      <td>United States, United Kingdom</td>
-      <td>March 31, 2017</td>
-      <td>1944</td>
-      <td>TV-14</td>
-      <td>76 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>British and American troops join forces to lib...</td>
-    </tr>
-    <tr>
-      <th>8436</th>
-      <td>s8437</td>
-      <td>Movie</td>
-      <td>The Negro Soldier</td>
-      <td>Stuart Heisler</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1944</td>
-      <td>TV-14</td>
-      <td>40 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>This documentary urged African Americans to en...</td>
-    </tr>
-    <tr>
-      <th>8419</th>
-      <td>s8420</td>
-      <td>Movie</td>
-      <td>The Memphis Belle: A Story of a\nFlying Fortress</td>
-      <td>William Wyler</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1944</td>
-      <td>TV-PG</td>
-      <td>40 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>This documentary centers on the crew of the B-...</td>
-    </tr>
-    <tr>
-      <th>7930</th>
-      <td>s7931</td>
-      <td>Movie</td>
-      <td>San Pietro</td>
-      <td>John Huston</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1945</td>
-      <td>TV-14</td>
-      <td>32 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>After the Allies invade Italy, the Liri Valley...</td>
-    </tr>
-    <tr>
-      <th>1331</th>
-      <td>s1332</td>
-      <td>TV Show</td>
-      <td>Five Came Back: The Reference Films</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>February 9, 2021</td>
-      <td>1945</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>TV Shows</td>
-      <td>This collection includes 12 World War II-era p...</td>
-    </tr>
-    <tr>
-      <th>7219</th>
-      <td>s7220</td>
-      <td>Movie</td>
-      <td>Know Your Enemy - Japan</td>
-      <td>Frank Capra, Joris Ivens</td>
-      <td>Walter Huston, Dana Andrews</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1945</td>
-      <td>TV-14</td>
-      <td>63 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>Though culturally insensitive by modern standa...</td>
-    </tr>
-    <tr>
-      <th>7575</th>
-      <td>s7576</td>
-      <td>Movie</td>
-      <td>Nazi Concentration Camps</td>
-      <td>George Stevens</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1945</td>
-      <td>TV-MA</td>
-      <td>59 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>Shocking footage shows Nazi concentration camp...</td>
-    </tr>
-    <tr>
-      <th>7743</th>
-      <td>s7744</td>
-      <td>TV Show</td>
-      <td>Pioneers of African-American Cinema</td>
-      <td>Oscar Micheaux, Spencer Williams, Richard E. N...</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>February 1, 2017</td>
-      <td>1946</td>
-      <td>TV-14</td>
-      <td>1 Season</td>
-      <td>TV Shows</td>
-      <td>This newly preserved collection features more ...</td>
-    </tr>
-    <tr>
-      <th>7294</th>
-      <td>s7295</td>
-      <td>Movie</td>
-      <td>Let There Be Light</td>
-      <td>John Huston</td>
-      <td>Walter Huston</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1946</td>
-      <td>TV-PG</td>
-      <td>58 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>Some returning combat veterans suffer scars th...</td>
-    </tr>
-    <tr>
-      <th>8587</th>
-      <td>s8588</td>
-      <td>Movie</td>
-      <td>Thunderbolt</td>
-      <td>William Wyler, John Sturges</td>
-      <td>James Stewart, Lloyd Bridges</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1947</td>
-      <td>TV-PG</td>
-      <td>42 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>A P-47 Thunderbolt squadron is shown in prepar...</td>
-    </tr>
-    <tr>
-      <th>2375</th>
-      <td>s2376</td>
-      <td>Movie</td>
-      <td>The Blazing Sun</td>
-      <td>Youssef Chahine</td>
-      <td>Omar Sharif, Faten Hamama, Zaki Rostom, Farid ...</td>
-      <td>Egypt</td>
-      <td>June 18, 2020</td>
-      <td>1954</td>
-      <td>TV-14</td>
-      <td>116 min</td>
-      <td>Classic Movies, Dramas, International Movies</td>
-      <td>Competition between sugar cane producers turns...</td>
-    </tr>
-    <tr>
-      <th>1699</th>
-      <td>s1700</td>
-      <td>Movie</td>
-      <td>White Christmas</td>
-      <td>Michael Curtiz</td>
-      <td>Bing Crosby, Danny Kaye, Rosemary Clooney, Ver...</td>
-      <td>United States</td>
-      <td>November 15, 2020</td>
-      <td>1954</td>
-      <td>TV-G</td>
-      <td>120 min</td>
-      <td>Children &amp; Family Movies, Classic Movies, Come...</td>
-      <td>Two war buddies fall for two sisters and follo...</td>
-    </tr>
-    <tr>
-      <th>7954</th>
-      <td>s7955</td>
-      <td>Movie</td>
-      <td>Scandal in Sorrento</td>
-      <td>Dino Risi</td>
-      <td>Vittorio De Sica, Sophia Loren, Lea Padovani, ...</td>
-      <td>Italy, France</td>
-      <td>November 13, 2020</td>
-      <td>1955</td>
-      <td>TV-PG</td>
-      <td>93 min</td>
-      <td>Classic Movies, Comedies, Independent Movies</td>
-      <td>When a marshal moves back to his hometown, he ...</td>
-    </tr>
-    <tr>
-      <th>8506</th>
-      <td>s8507</td>
-      <td>Movie</td>
-      <td>The Sign of Venus</td>
-      <td>Dino Risi</td>
-      <td>Sophia Loren, Franca Valeri, Vittorio De Sica,...</td>
-      <td>Italy</td>
-      <td>November 13, 2020</td>
-      <td>1955</td>
-      <td>TV-14</td>
-      <td>97 min</td>
-      <td>Classic Movies, Comedies, Independent Movies</td>
-      <td>While suitors swoon over her cousin, a single ...</td>
-    </tr>
-    <tr>
-      <th>7839</th>
-      <td>s7840</td>
-      <td>Movie</td>
-      <td>Rebel Without a Cause</td>
-      <td>Nicholas Ray</td>
-      <td>James Dean, Natalie Wood, Sal Mineo, Jim Backu...</td>
-      <td>United States</td>
-      <td>November 1, 2019</td>
-      <td>1955</td>
-      <td>PG-13</td>
-      <td>111 min</td>
-      <td>Classic Movies, Dramas</td>
-      <td>When Jim Stark arrives in a new town with his ...</td>
-    </tr>
-    <tr>
-      <th>6784</th>
-      <td>s6785</td>
-      <td>Movie</td>
-      <td>Forbidden Planet</td>
-      <td>Fred M. Wilcox</td>
-      <td>Leslie Nielsen, Walter Pidgeon, Anne Francis, ...</td>
-      <td>United States</td>
-      <td>November 1, 2019</td>
-      <td>1956</td>
-      <td>G</td>
-      <td>98 min</td>
-      <td>Action &amp; Adventure, Classic Movies, Sci-Fi &amp; F...</td>
-      <td>A pulp-fiction sci-fi classic, Forbidden Plane...</td>
-    </tr>
-    <tr>
-      <th>2369</th>
-      <td>s2370</td>
-      <td>Movie</td>
-      <td>Dark Waters</td>
-      <td>Youssef Chahine</td>
-      <td>Faten Hamama, Omar Sharif, Ahmed Ramzy, Hussei...</td>
-      <td>Egypt</td>
-      <td>June 18, 2020</td>
-      <td>1956</td>
-      <td>TV-14</td>
-      <td>104 min</td>
-      <td>Classic Movies, Dramas, International Movies</td>
-      <td>A fisherman returns home after a three-year ab...</td>
-    </tr>
-    <tr>
-      <th>2368</th>
-      <td>s2369</td>
-      <td>Movie</td>
-      <td>Cairo Station</td>
-      <td>Youssef Chahine</td>
-      <td>Farid Shawqy, Hind Rostom, Youssef Chahine, Ha...</td>
-      <td>Egypt</td>
-      <td>June 18, 2020</td>
-      <td>1958</td>
-      <td>TV-14</td>
-      <td>73 min</td>
-      <td>Classic Movies, Dramas, International Movies</td>
-      <td>A Cairo newsstand vendor's fantasies morph int...</td>
-    </tr>
-    <tr>
-      <th>6431</th>
-      <td>s6432</td>
-      <td>Movie</td>
-      <td>Cat on a Hot Tin Roof</td>
-      <td>Richard Brooks</td>
-      <td>Elizabeth Taylor, Paul Newman, Burl Ives, Jack...</td>
-      <td>United States</td>
-      <td>November 1, 2019</td>
-      <td>1958</td>
-      <td>NR</td>
-      <td>108 min</td>
-      <td>Classic Movies, Dramas</td>
-      <td>Members of a Southern clan scramble to curry f...</td>
-    </tr>
-    <tr>
-      <th>6853</th>
-      <td>s6854</td>
-      <td>Movie</td>
-      <td>Gigi</td>
-      <td>Vincente Minnelli, Charles Walters</td>
-      <td>Leslie Caron, Maurice Chevalier, Louis Jourdan...</td>
-      <td>United States</td>
-      <td>November 1, 2019</td>
-      <td>1958</td>
-      <td>G</td>
-      <td>115 min</td>
-      <td>Classic Movies, Comedies, Music &amp; Musicals</td>
-      <td>Gigi's an avant-garde French waif being groome...</td>
-    </tr>
-    <tr>
-      <th>542</th>
-      <td>s543</td>
-      <td>Movie</td>
-      <td>Ujala</td>
-      <td>Naresh Saigal</td>
-      <td>Mala Sinha, Shammi Kapoor, Raaj Kumar, Leela C...</td>
-      <td>India</td>
-      <td>July 6, 2021</td>
-      <td>1959</td>
-      <td>TV-14</td>
-      <td>143 min</td>
-      <td>Dramas, International Movies</td>
-      <td>An honest man dreams of a better life for his ...</td>
-    </tr>
-    <tr>
-      <th>5220</th>
-      <td>s5221</td>
-      <td>Movie</td>
-      <td>Singapore</td>
-      <td>Shakti Samanta</td>
-      <td>Shammi Kapoor, Padmini, Maria Menado, Shashika...</td>
-      <td>India, Malaysia</td>
-      <td>October 15, 2017</td>
-      <td>1960</td>
-      <td>TV-PG</td>
-      <td>158 min</td>
-      <td>Comedies, Dramas, International Movies</td>
-      <td>When his employee disappears in Singapore, Shy...</td>
-    </tr>
-    <tr>
-      <th>7133</th>
-      <td>s7134</td>
-      <td>Movie</td>
-      <td>Jis Desh Men Ganga Behti Hai</td>
-      <td>Radhu Karmakar</td>
-      <td>Raj Kapoor, Padmini, Pran, Chanchal, Lalita Pa...</td>
-      <td>NaN</td>
-      <td>December 31, 2019</td>
-      <td>1960</td>
-      <td>TV-14</td>
-      <td>181 min</td>
-      <td>Action &amp; Adventure, Dramas, International Movies</td>
-      <td>Falling in with a band of outlaws during a hol...</td>
-    </tr>
-    <tr>
-      <th>7637</th>
-      <td>s7638</td>
-      <td>Movie</td>
-      <td>Ocean's Eleven</td>
-      <td>Lewis Milestone</td>
-      <td>Frank Sinatra, Dean Martin, Sammy Davis Jr., P...</td>
-      <td>United States</td>
-      <td>November 1, 2019</td>
-      <td>1960</td>
-      <td>TV-PG</td>
-      <td>127 min</td>
-      <td>Action &amp; Adventure, Classic Movies, Comedies</td>
-      <td>Frank Sinatra leads an all-star cast as Danny ...</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>834</th>
-      <td>s835</td>
-      <td>Movie</td>
-      <td>Blue Miracle</td>
-      <td>Julio Quintana</td>
-      <td>Jimmy Gonzales, Dennis Quaid, Anthony Gonzalez...</td>
-      <td>United States</td>
-      <td>May 27, 2021</td>
-      <td>2021</td>
-      <td>TV-PG</td>
-      <td>97 min</td>
-      <td>Children &amp; Family Movies, Dramas, Faith &amp; Spir...</td>
-      <td>To save their cash-strapped orphanage, a guard...</td>
-    </tr>
-    <tr>
-      <th>833</th>
-      <td>s834</td>
-      <td>TV Show</td>
-      <td>Black Space</td>
-      <td>NaN</td>
-      <td>Guri Alfi, Shai Avivi, Assi Levy, Reut Alush, ...</td>
-      <td>Israel</td>
-      <td>May 27, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>Crime TV Shows, International TV Shows, TV Dramas</td>
-      <td>A rogue detective with unorthodox means leads ...</td>
-    </tr>
-    <tr>
-      <th>832</th>
-      <td>s833</td>
-      <td>TV Show</td>
-      <td>Word of Honor</td>
-      <td>Gary Sing</td>
-      <td>Zhang Zhehan, Gong Jun, Zhou Ye, Asher Ma, Sun...</td>
-      <td>NaN</td>
-      <td>May 28, 2021</td>
-      <td>2021</td>
-      <td>TV-14</td>
-      <td>1 Season</td>
-      <td>International TV Shows, TV Action &amp; Adventure,...</td>
-      <td>A disillusioned royal magistrate sets out for ...</td>
-    </tr>
-    <tr>
-      <th>831</th>
-      <td>s832</td>
-      <td>TV Show</td>
-      <td>The Least Expected Day: Inside the Movistar Te...</td>
-      <td>José Larraza, Marc Pons</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>May 28, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>Docuseries, International TV Shows, Spanish-La...</td>
-      <td>Pro cycling’s Movistar Team sets their sights ...</td>
-    </tr>
-    <tr>
-      <th>830</th>
-      <td>s831</td>
-      <td>TV Show</td>
-      <td>The Kominsky Method</td>
-      <td>NaN</td>
-      <td>Michael Douglas, Alan Arkin, Sarah Baker, Nanc...</td>
-      <td>United States</td>
-      <td>May 28, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>3 Seasons</td>
-      <td>TV Comedies, TV Dramas</td>
-      <td>Acting coach Sandy Kominsky and best friend No...</td>
-    </tr>
-    <tr>
-      <th>1551</th>
-      <td>s1552</td>
-      <td>TV Show</td>
-      <td>Hilda</td>
-      <td>NaN</td>
-      <td>Bella Ramsey, Ameerah Falzon-Ojo, Oliver Nelso...</td>
-      <td>United Kingdom, Canada, United States</td>
-      <td>December 14, 2020</td>
-      <td>2021</td>
-      <td>TV-Y7</td>
-      <td>2 Seasons</td>
-      <td>Kids' TV</td>
-      <td>Fearless, free-spirited Hilda finds new friend...</td>
-    </tr>
-    <tr>
-      <th>837</th>
-      <td>s838</td>
-      <td>TV Show</td>
-      <td>Ragnarok</td>
-      <td>NaN</td>
-      <td>David Stakston, Jonas Strand Gravli, Herman Tø...</td>
-      <td>Norway, Denmark</td>
-      <td>May 27, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>International TV Shows, TV Action &amp; Adventure,...</td>
-      <td>In a Norwegian town poisoned by pollution and ...</td>
-    </tr>
-    <tr>
-      <th>890</th>
-      <td>s891</td>
-      <td>TV Show</td>
-      <td>Castlevania</td>
-      <td>NaN</td>
-      <td>Richard Armitage, James Callis, Graham McTavis...</td>
-      <td>United States</td>
-      <td>May 13, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>4 Seasons</td>
-      <td>Anime Series, TV Horror, TV Thrillers</td>
-      <td>A vampire hunter fights to save a besieged cit...</td>
-    </tr>
-    <tr>
-      <th>853</th>
-      <td>s854</td>
-      <td>Movie</td>
-      <td>Army of the Dead</td>
-      <td>Zack Snyder</td>
-      <td>Dave Bautista, Ella Purnell, Omari Hardwick, G...</td>
-      <td>United States</td>
-      <td>May 21, 2021</td>
-      <td>2021</td>
-      <td>R</td>
-      <td>148 min</td>
-      <td>Action &amp; Adventure, Horror Movies</td>
-      <td>After a zombie outbreak in Las Vegas, a group ...</td>
-    </tr>
-    <tr>
-      <th>855</th>
-      <td>s856</td>
-      <td>TV Show</td>
-      <td>Jurassic World Camp Cretaceous</td>
-      <td>NaN</td>
-      <td>Paul-Mikél Williams, Jenna Ortega, Sean Giambr...</td>
-      <td>United States</td>
-      <td>May 21, 2021</td>
-      <td>2021</td>
-      <td>TV-Y7</td>
-      <td>3 Seasons</td>
-      <td>Kids' TV, TV Action &amp; Adventure, TV Sci-Fi &amp; F...</td>
-      <td>Six teens invited to attend a state-of-the-art...</td>
-    </tr>
-    <tr>
-      <th>888</th>
-      <td>s889</td>
-      <td>Movie</td>
-      <td>The Upshaws - The Afterparty</td>
-      <td>NaN</td>
-      <td>David Spade, London Hughes, Fortune Feimster, ...</td>
-      <td>NaN</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-14</td>
-      <td>32 min</td>
-      <td>Comedies</td>
-      <td>The comedic dream team from "The Upshaws" disc...</td>
-    </tr>
-    <tr>
-      <th>884</th>
-      <td>s885</td>
-      <td>TV Show</td>
-      <td>Move to Heaven</td>
-      <td>NaN</td>
-      <td>Lee Je-hoon, Tang Jun-sang, Hong Seung-hee, Ji...</td>
-      <td>South Korea</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>International TV Shows, TV Dramas</td>
-      <td>Finding life in all that’s left behind, a deta...</td>
-    </tr>
-    <tr>
-      <th>883</th>
-      <td>s884</td>
-      <td>TV Show</td>
-      <td>Love, Death &amp; Robots</td>
-      <td>NaN</td>
-      <td>Topher Grace, Mary Elizabeth Winstead, Gary Co...</td>
-      <td>United States</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>TV Action &amp; Adventure, TV Horror, TV Sci-Fi &amp; ...</td>
-      <td>Terrifying creatures, wicked surprises and dar...</td>
-    </tr>
-    <tr>
-      <th>882</th>
-      <td>s883</td>
-      <td>Movie</td>
-      <td>Jungle Beat: The Movie</td>
-      <td>Brent Dawes</td>
-      <td>Ed Kear, David Menkin, Ina Marie Smith, John G...</td>
-      <td>Mauritius</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-Y7</td>
-      <td>90 min</td>
-      <td>Children &amp; Family Movies, Comedies</td>
-      <td>When a lost and lonely alien crash-lands on Ea...</td>
-    </tr>
-    <tr>
-      <th>881</th>
-      <td>s882</td>
-      <td>Movie</td>
-      <td>I Am All Girls</td>
-      <td>Donovan Marsh</td>
-      <td>Erica Wessels, Hlubi Mboya, Deon Lotz, Brendon...</td>
-      <td>South Africa</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>107 min</td>
-      <td>Dramas, International Movies, Thrillers</td>
-      <td>A relentless detective finds common ground wit...</td>
-    </tr>
-    <tr>
-      <th>880</th>
-      <td>s881</td>
-      <td>TV Show</td>
-      <td>Haunted</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>United States, Czech Republic</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>3 Seasons</td>
-      <td>Reality TV, TV Horror, TV Thrillers</td>
-      <td>Real people sit down with friends and family t...</td>
-    </tr>
-    <tr>
-      <th>879</th>
-      <td>s880</td>
-      <td>TV Show</td>
-      <td>Halston</td>
-      <td>Daniel Minahan</td>
-      <td>Ewan McGregor, Bill Pullman, Rebecca Dayan, Da...</td>
-      <td>United States</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>TV Dramas</td>
-      <td>His name built an empire. His style defined an...</td>
-    </tr>
-    <tr>
-      <th>878</th>
-      <td>s879</td>
-      <td>Movie</td>
-      <td>Ferry</td>
-      <td>Cecilia Verheyden</td>
-      <td>Frank Lammers, Elise Schaap, Huub Stapel, Moni...</td>
-      <td>Belgium, Netherlands</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>107 min</td>
-      <td>Dramas, International Movies, Thrillers</td>
-      <td>Before he built a drug empire, Ferry Bouman re...</td>
-    </tr>
-    <tr>
-      <th>854</th>
-      <td>s855</td>
-      <td>Movie</td>
-      <td>Creating an Army of the Dead</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>May 21, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>29 min</td>
-      <td>Documentaries</td>
-      <td>Zack Snyder and his "Army of the Dead" team di...</td>
-    </tr>
-    <tr>
-      <th>877</th>
-      <td>s878</td>
-      <td>Movie</td>
-      <td>Cinema Bandi</td>
-      <td>Praveen Kandregula</td>
-      <td>Vikas Vasistha, Sandeep Varanasi, Rag Mayur, T...</td>
-      <td>India</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>99 min</td>
-      <td>Comedies, Independent Movies, International Mo...</td>
-      <td>A struggling rickshaw driver’s life takes a ro...</td>
-    </tr>
-    <tr>
-      <th>874</th>
-      <td>s875</td>
-      <td>TV Show</td>
-      <td>Booba: Food Puzzle</td>
-      <td>NaN</td>
-      <td>Artem Kretov, Elena Solovieva, Vyacheslav Kataev</td>
-      <td>United Kingdom</td>
-      <td>May 15, 2021</td>
-      <td>2021</td>
-      <td>TV-Y</td>
-      <td>1 Season</td>
-      <td>Kids' TV</td>
-      <td>Curious Booba is now a chef! With friends Lool...</td>
-    </tr>
-    <tr>
-      <th>873</th>
-      <td>s874</td>
-      <td>Movie</td>
-      <td>Ahaan</td>
-      <td>Nikhil Pherwani</td>
-      <td>Arif Zakaria, Abuli Mamaji, Niharika Singh, Ra...</td>
-      <td>India</td>
-      <td>May 15, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>81 min</td>
-      <td>Dramas, Independent Movies, International Movies</td>
-      <td>Jilted by his wife, a man with OCD finds eye-o...</td>
-    </tr>
-    <tr>
-      <th>871</th>
-      <td>s872</td>
-      <td>Movie</td>
-      <td>Sardar Ka Grandson</td>
-      <td>Kaashvie Nair</td>
-      <td>Arjun Kapoor, Neena Gupta, Rakul Preet Singh, ...</td>
-      <td>India</td>
-      <td>May 18, 2021</td>
-      <td>2021</td>
-      <td>TV-14</td>
-      <td>140 min</td>
-      <td>Comedies, Dramas, International Movies</td>
-      <td>A devoted grandson’s mission to reunite his ai...</td>
-    </tr>
-    <tr>
-      <th>870</th>
-      <td>s871</td>
-      <td>Movie</td>
-      <td>Amy Tan: Unintended Memoir</td>
-      <td>James Redford</td>
-      <td>Amy Tan</td>
-      <td>United States</td>
-      <td>May 18, 2021</td>
-      <td>2021</td>
-      <td>TV-14</td>
-      <td>101 min</td>
-      <td>Documentaries</td>
-      <td>From her painful past to her successful career...</td>
-    </tr>
-    <tr>
-      <th>869</th>
-      <td>s870</td>
-      <td>TV Show</td>
-      <td>Who Killed Sara?</td>
-      <td>NaN</td>
-      <td>Manolo Cardona, Ginés García Millán, Carolina ...</td>
-      <td>Mexico</td>
-      <td>May 19, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>Crime TV Shows, International TV Shows, Spanis...</td>
-      <td>Hell-bent on exacting revenge and proving he w...</td>
-    </tr>
-    <tr>
-      <th>862</th>
-      <td>s863</td>
-      <td>TV Show</td>
-      <td>Special</td>
-      <td>NaN</td>
-      <td>Ryan O'Connell, Jessica Hecht, Punam Patel, Ma...</td>
-      <td>United States</td>
-      <td>May 20, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>TV Comedies</td>
-      <td>A young gay man with cerebral palsy branches o...</td>
-    </tr>
-    <tr>
-      <th>861</th>
-      <td>s862</td>
-      <td>Movie</td>
-      <td>Little Singham Future mein Satakli</td>
-      <td>Prakash Satam</td>
-      <td>Anamaya Verma, Ganesh Divekar, Jigna Bharadhwa...</td>
-      <td>NaN</td>
-      <td>May 20, 2021</td>
-      <td>2021</td>
-      <td>TV-Y7</td>
-      <td>47 min</td>
-      <td>Children &amp; Family Movies, Comedies</td>
-      <td>Little Singham and his crew travel to the year...</td>
-    </tr>
-    <tr>
-      <th>857</th>
-      <td>s858</td>
-      <td>TV Show</td>
-      <td>The Neighbor</td>
-      <td>NaN</td>
-      <td>Quim Gutiérrez, Clara Lago, Adrián Pino, Catel...</td>
-      <td>Spain</td>
-      <td>May 21, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>International TV Shows, Spanish-Language TV Sh...</td>
-      <td>Self-centered Javier's life gets a bit messy w...</td>
-    </tr>
-    <tr>
-      <th>876</th>
-      <td>s877</td>
-      <td>TV Show</td>
-      <td>Alma Matters</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>India</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>Docuseries, International TV Shows</td>
-      <td>Alumni of India’s elite academic institutes sh...</td>
-    </tr>
-    <tr>
-      <th>965</th>
-      <td>s966</td>
-      <td>TV Show</td>
-      <td>Yasuke</td>
-      <td>NaN</td>
-      <td>LaKeith Stanfield, Takehiro Hira, Maya Tanida,...</td>
-      <td>NaN</td>
-      <td>April 29, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>Anime Series, International TV Shows</td>
-      <td>A peaceful boatman once known as the Black Sam...</td>
-    </tr>
-  </tbody>
-</table>
-<p>8807 rows × 12 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[137]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Type: &quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
@@ -14658,7 +13674,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[138]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Oldest and Newest released year for the dataset</span>
@@ -14690,7 +13706,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[139]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># histogram of release year</span>
@@ -14714,7 +13730,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAAD5CAYAAADcDXXiAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBodHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAF55JREFUeJzt3X9MXfUd//HXvZd7czHe2lHgfotj07k5iDLIxBALdLoL88qSBScdhdSlphK3kk4d2qJ2tovJoFS2WtfYhmrb1akoq4Y5B2gCRscdZpAwyNjqj9V0bYWLSqj8KFc83z/89n6laKGUW+Rzn49/KO/e4/287rWvnnw459ZmWZYlAIBR7Au9AADA/KPcAcBAlDsAGIhyBwADUe4AYCDKHQAMFDPTA3p7e7V+/Xp9/etflyRdeeWVuv3227Vx40ZNTk4qISFB27dvl8vlUmNjow4cOCC73a7i4mIVFRUpFAqpsrJSx48fl8PhUFVVlZKTkyMeDACimW2m69zfeOMNvfzyy3rggQfCs/vuu08rV67UTTfdpJqaGn31q19VYWGhbr75ZjU0NMjpdKqwsFDPPPOMWltb9c9//lNbtmzRq6++queff147duyIeDAAiGYzbsuMjIxMm3V0dMjn80mSfD6fAoGAuru7lZaWJo/HI7fbrczMTHV1dSkQCCg/P1+SlJOTo87OznmOAAA404zbMqOjo+rs7NTtt9+usbExbdiwQWNjY3K5XJKkhIQEBYNBDQ4OKi4uLnxcfHz8tLnD4ZDdbtfExET4eADA/Jux3FNSUlReXi6fz6f//ve/uu222/Txxx+Hf//0rs6ZuzuWZclms33h/LM4mweAubnmmms+dz5juV9xxRW64oorJEmXX3654uPjdeLECY2Pj8vtdqu/v1+JiYnyer1qa2sLHzcwMKCMjAx5vV4Fg0GlpKQoFArJsiw5nc5ZL9B0fX19Sk1NXehlLIhozi5Fd/5ozi7NX/6znRjPuOfe0NCgP/zhD5KkYDCo999/Xz/+8Y/V3NwsSWppaVFubq7S09PV09Oj4eFhjYyMqKurS5mZmcrOzlZTU5MkqbW1VVlZWecdCABwdjOeuefn5+uee+5Rc3OzJiYmtHXrVqWmpmrTpk2qr69XUlKSCgsL5XQ6VVFRoXXr1slms6m8vFwej0cFBQVqb29XSUmJXC6XqqurL0QuAIhqM5b7JZdcorq6umnzffv2TZv5/X75/f4ps9PXtgMALhzuUAUAA1HuAGAgyh0ADES5A4CBKHcAMNCMV8sAAM7ussq/zOGodyRJR6p/OL+L+X84cwcAA1HuAGAgyh0ADES5A4CBKHcAMBDlDgAGotwBwECUOwAYiHIHAANR7gBgIModAAxEuQOAgSh3ADAQ5Q4ABqLcAcBAlDsAGIhyBwADUe4AYCDKHQAMRLkDgIEodwAwEOUOAAai3AHAQJQ7ABiIcgcAA1HuAGAgyh0ADES5A4CBKHcAMNCsyn18fFw+n0+HDh3SiRMndOutt6q0tFR33nmnJiYmJEmNjY265ZZbtGrVKjU0NEiSQqGQKioqVFJSojVr1ujo0aORSwIACJtVuT/22GNaunSpJGnnzp0qLS3VU089pUsvvVQNDQ0aHR3Vrl27tH//fh08eFB79+7V0NCQXnzxRS1ZskRPP/20ysrKVFtbG9EwAIBPzVjub7/9tt566y1df/31kqSOjg75fD5Jks/nUyAQUHd3t9LS0uTxeOR2u5WZmamuri4FAgHl5+dLknJyctTZ2Rm5JACAsJiZHrBt2zb96le/0gsvvCBJGhsbk8vlkiQlJCQoGAxqcHBQcXFx4WPi4+OnzR0Oh+x2uyYmJsLHf1ZfX9+8BFpsxsfHyR6lojl/NGc/U6Reh7OW+wsvvKCMjAwlJyeHZzabLfxry7KmfP3s3GazfeH886Smpp7byg3R19dH9igVzfnNy/7OnI88n9fhbLshZy33trY2HT16VG1tbXrvvffkcrkUGxur8fFxud1u9ff3KzExUV6vV21tbeHjBgYGlJGRIa/Xq2AwqJSUFIVCIVmWJafTOecgAIDZOeue+44dO/SnP/1Jzz77rFatWqX169drxYoVam5uliS1tLQoNzdX6enp6unp0fDwsEZGRtTV1aXMzExlZ2erqalJktTa2qqsrKzIJwIAzLznfqYNGzZo06ZNqq+vV1JSkgoLC+V0OlVRUaF169bJZrOpvLxcHo9HBQUFam9vV0lJiVwul6qrqyORAQBwhlmX+4YNG8K/3rdv37Tf9/v98vv9U2YOh0NVVVXnsTwAwFxwhyoAGIhyBwADUe4AYCDKHQAMRLkDgIEodwAwEOUOAAai3AHAQJQ7ABiIcgcAA1HuAGAgyh0ADES5A4CBKHcAMBDlDgAGotwBwECUOwAYiHIHAANR7gBgIModAAxEuQOAgSh3ADAQ5Q4ABqLcAcBAlDsAGIhyBwADUe4AYCDKHQAMRLkDgIEodwAwEOUOAAai3AHAQJQ7ABiIcgcAA8XM9ICxsTFVVlbq/fff16lTp7R+/XqlpKRo48aNmpycVEJCgrZv3y6Xy6XGxkYdOHBAdrtdxcXFKioqUigUUmVlpY4fPy6Hw6GqqiolJydfiGwAELVmPHNvbW3V1VdfrSeffFI7duxQdXW1du7cqdLSUj311FO69NJL1dDQoNHRUe3atUv79+/XwYMHtXfvXg0NDenFF1/UkiVL9PTTT6usrEy1tbUXIhcARLUZy72goEBlZWWSpBMnTsjr9aqjo0M+n0+S5PP5FAgE1N3drbS0NHk8HrndbmVmZqqrq0uBQED5+fmSpJycHHV2dkYwDgBAmsW2zGmrV6/We++9p927d+u2226Ty+WSJCUkJCgYDGpwcFBxcXHhx8fHx0+bOxwO2e12TUxMhI8HAMy/WZf7M888o76+Pt17772y2WzhuWVZU75+dm6z2b5wfqa+vr5zWrgpxsfHyR6lojl/NGc/U6RehxnLvbe3V8uWLdPy5cuVmpqqyclJxcbGanx8XG63W/39/UpMTJTX61VbW1v4uIGBAWVkZMjr9SoYDColJUWhUEiWZcnpdE57ntTU1HkNtlj09fWRPUpFc37zsr8z5yPP53U42zb3jHvu//jHP/TEE09IkgYHBzU6OqoVK1aoublZktTS0qLc3Fylp6erp6dHw8PDGhkZUVdXlzIzM5Wdna2mpiZJn/5wNisra85BAACzM+OZ++rVq/XAAw+otLRU4+PjevDBB3X11Vdr06ZNqq+vV1JSkgoLC+V0OlVRUaF169bJZrOpvLxcHo9HBQUFam9vV0lJiVwul6qrqy9ELgCIajOWu9vt/tzLF/ft2zdt5vf75ff7p8xOX9sOALhwuEMVAAxEuQOAgSh3ADAQ5Q4ABqLcAcBAlDsAGIhyBwADUe4AYCDKHQAMRLkDgIEodwAwEOUOAAai3AHAQJQ7ABiIcgcAA1HuAGAgyh0ADES5A4CBKHcAMBDlDgAGotwBwECUOwAYiHIHAAPFLPQCAGChXVb5l4VewrzjzB0ADES5A4CBKHcAMBDlDgAGotwBwECUOwAYiHIHAANR7gBgIModAAxEuQOAgSh3ADDQrD5bpqamRp2dnfr44491xx13KC0tTRs3btTk5KQSEhK0fft2uVwuNTY26sCBA7Lb7SouLlZRUZFCoZAqKyt1/PhxORwOVVVVKTk5OdK5ACCqzVjuf//73/Xmm2+qvr5eH374oW6++WZdd911Ki0t1U033aSamho1NDSosLBQu3btUkNDg5xOpwoLC5WXl6fW1lYtWbJEtbW1evXVV1VbW6sdO3ZciGwAELVm3Ja59tpr9cgjj0iSLrnkEo2Njamjo0M+n0+S5PP5FAgE1N3drbS0NHk8HrndbmVmZqqrq0uBQED5+fmSpJycHHV2dkYwDgBAmsWZu8Ph0EUXXSRJeu6557Ry5Uq9/vrrcrlckqSEhAQFg0ENDg4qLi4ufFx8fPy0ucPhkN1u18TERPj40/r6+uYt1GIyPj5O9igVzfmjOfuZIvU6zPrz3F955RU1NDToiSee0I033hieW5Y15etn5zab7QvnZ0pNTT2nhZuir6+P7FEqmvN/+bK/s2DPfD6vw9l2QmZ1tcxrr72m3bt3q66uTh6PR7GxsRofH5ck9ff3KzExUV6vV4ODg+FjBgYGlJCQIK/Xq2AwKEkKhUKyLEtOp3POYQAAM5ux3E+ePKmamhrt2bNHS5culSStWLFCzc3NkqSWlhbl5uYqPT1dPT09Gh4e1sjIiLq6upSZmans7Gw1NTVJklpbW5WVlRXBOAAAaRbbMi+99JI+/PBD3XXXXeFZdXW1Nm/erPr6eiUlJamwsFBOp1MVFRVat26dbDabysvL5fF4VFBQoPb2dpWUlMjlcqm6ujqigQAAsyj34uJiFRcXT5vv27dv2szv98vv90+Znb62HQBw4XCHKgAYiHIHAANR7gBgIModAAxEuQOAgSh3ADAQ5Q4ABqLcAcBAlDsAGIhyBwADUe4AYCDKHQAMRLkDgIEodwAwEOUOAAai3AHAQJQ7ABiIcgcAA1HuAGAgyh0ADES5A4CBKHcAMBDlDgAGotwBwECUOwAYiHIHAANR7gBgIModAAxEuQOAgSh3ADAQ5Q4ABqLcAcBAlDsAGIhyBwADzarcDx8+rLy8PD355JOSpBMnTujWW29VaWmp7rzzTk1MTEiSGhsbdcstt2jVqlVqaGiQJIVCIVVUVKikpERr1qzR0aNHIxQFAHDajOU+Ojqqhx56SNddd114tnPnTpWWluqpp57SpZdeqoaGBo2OjmrXrl3av3+/Dh48qL1792poaEgvvviilixZoqefflplZWWqra2NaCAAwCzK3eVyqa6uTomJieFZR0eHfD6fJMnn8ykQCKi7u1tpaWnyeDxyu93KzMxUV1eXAoGA8vPzJUk5OTnq7OyMUBQAwGkzlntMTIzcbveU2djYmFwulyQpISFBwWBQg4ODiouLCz8mPj5+2tzhcMhut4e3cQAAkREzl4NsNlv415ZlTfn62bnNZvvC+Zn6+vrmspRFb3x8nOxRKprzR3P2M0XqdZhTucfGxmp8fFxut1v9/f1KTEyU1+tVW1tb+DEDAwPKyMiQ1+tVMBhUSkqKQqGQLMuS0+mc9t9MTU2dc4jFrK+vj+xRKprzf/myv7Ngz3w+r8PZtrnndCnkihUr1NzcLElqaWlRbm6u0tPT1dPTo+HhYY2MjKirq0uZmZnKzs5WU1OTJKm1tVVZWVlzeUoAwDmY8cy9t7dX27Zt07FjxxQTE6Pm5mY9/PDDqqysVH19vZKSklRYWCin06mKigqtW7dONptN5eXl8ng8KigoUHt7u0pKSuRyuVRdXX0hcgFAVJux3K+++modPHhw2nzfvn3TZn6/X36/f8rM4XCoqqrqPJYIADhX3KEKAAai3AHAQJQ7ABiIcgcAA1HuAGCgOd3EBABfNpdV/mWhl/Clwpk7ABiIcgcAA1HuAGAgyh0ADES5A4CBKHcAMBDlDgAGotwBwECUOwAYiHIHAANR7gBgIModAAxEuQOAgSh3ADAQ5Q4ABqLcAcBAlDsAGIh/iQnAlwb/mtL84cwdAAxEuQOAgSh3ADAQ5Q4ABqLcAcBAlDsAGIhLIQHMq9lfzvhORNcR7ThzBwADUe4AYCDKHQAMxJ47YCBu48cFKfff/OY36u7uls1m0/3336/vfOc7F+JpASBqRbzc33jjDb377ruqr6/XW2+9pfvuu0/PPfdcpJ8W+FKY+QyaK0YQGREv90AgoLy8PEnSN7/5TQ0PD+ujjz7SxRdfHOmnBuYFWxxYjCJe7oODg7rqqqvC3y9btkzBYHBauXd2dkZ6KV9aZP9y+9Oq/7PQS4DBIvVnIOLlblnWtO9tNtuU2TXXXBPpZQBAVIn4pZBer1eDg4Ph7wcGBhQfHx/ppwWAqBbxcs/OzlZzc7Mk6V//+pcSExPZbweACIv4tsx3v/tdXXXVVVq9erVsNpu2bNkS6acEgKhns87cFMe8OHz4sNavX6+1a9dqzZo1evvtt/Xggw/KZrPpsssu09atWxUT8///bv3lL38pl8ul6upqhUIhVVZW6vjx43I4HKqqqlJycvICpjl3s83/73//W/fff78kKS8vT+vXr1/0+Web/Xe/+506OjpkWZby8vJUVlamkydPqqKiQidPntRFF12k2tpaLV26dKEjnZOamhp1dnbq448/1h133KG0tDRt3LhRk5OTSkhI0Pbt2+VyudTY2KgDBw7IbreruLhYRUVFi/69n232l156SU888YTsdruuu+463X333fOf3cK8GxkZsdasWWNt3rzZOnjwoGVZlvWzn/3MamtrsyzLsn7/+99bjY2N4ce//vrr1i233GJt2rTJsizLOnTokLV161bLsiyrra3NuvPOOy9wgvNzLvmLioqs3t5ea3Jy0rr77rut0dHRRZ1/ttn/85//WMXFxZZlWdbk5KTl9/utgYEB69FHH7Xq6uosy7KsJ5980qqpqVmYIHMUCASs22+/3bIsy/rggw+s733ve1ZlZaX10ksvWZZlWdu2bbP++Mc/WiMjI9YPfvADa3h42BobG7NuvPFG68MPP1zU7/1ss4+Ojlo33HCDdfLkSeuTTz6xioqKrDfffHPes/PZMhHgcrlUV1enxMTE8Ozdd98N35mbm5urv/3tb5KkiYkJPfbYY/r5z38efmwgEFB+fr4kKScnZ1FcLvhZs80/ODio0dFRXXXVVbLb7frtb3+r2NjYRZ1/ttk9Ho9OnTqliYkJnTp1Sna7fVr2vLw8BQKBBckxV9dee60eeeQRSdIll1yisbExdXR0yOfzSZJ8Pp8CgYC6u7uVlpYmj8cjt9utzMxMdXV1Ler3frbZY2Nj1djYqIsvvlg2m01Lly7V0NDQvGen3CMgJiZGbrd7yuzKK6/Uq6++Kkl67bXXwlcQ7dmzRyUlJVN+yDw4OKi4uDhJksPhkN1u18TExAVa/fmbbf5jx45p2bJl+vWvf63S0lLt379f0uLOP9vsy5cvl9/v1w033KAbbrhBq1ev1sUXXzwle3x8vAYGBi54hvPhcDh00UUXSZKee+45rVy5UmNjY3K5XJKkhIQEBYPBKTmlT7OeOV9s7/1ss0sK/3k/fPiwjh07pvT09HnPTrlfIJs2bdJf//pX/fSnP5VlWbIsS0eOHFFvb69++MMfTnmsNYt7Axabz8t/+jX4xS9+occff1yHDh3S4cOHjcv/edmPHj2ql19+Wa+88opefvllPfPMM3r//fenZF/MuV955RU1NDSEf9Zw2ul8X/Qem/Dez5T9tCNHjqiiokK1tbVyOp3znp1PhbxAli9frj179kj69OxtYGBAbW1tOn78uH7yk5/oo48+0gcffKC6ujp5vV4Fg0GlpKQoFArJsiw5nc4FTnB+Pi//smXL9K1vfUtf+cpXJH16M9tbb71lXP7Py97T06P09HTFxsZKkr797W/r8OHD4ewej0f9/f1KSEhYyKXPyWuvvabdu3dr79698ng8io2N1fj4uNxut/r7+5WYmCiv16u2trbwMQMDA8rIyFj07/1sskvSe++9p/LyctXU1Cg1NVWS5j07Z+4XyM6dO8P/Mx86dEjf//73tXbtWv35z3/Ws88+qy1btuj6669XWVmZsrOz1dTUJElqbW1VVlbWAq58fnxe/uTkZI2MjGhoaEiffPKJ+vr69I1vfMO4/J+X/Wtf+5p6e3v1ySefKBQK6fDhw0pOTp6SvaWlRbm5uQu48nN38uRJ1dTUaM+ePeGrfFasWBG+1+V0pvT0dPX09Gh4eFgjIyPq6upSZmbmon7vZ5tdkh544AFt3bp1ykezzHd2LoWMgN7eXm3btk3Hjh1TTEyMvF6v7rnnHj300ENyOp3KysrSXXfdNeWYjo4OPf/886qurtbk5KQ2b96sI0eOhC+PXL58+QKlOXfnkr+7u1sPP/ywTp06pdzcXG3YsGFR5z+X7Dt37lR7e7ssy9JNN92ktWvXamRkRPfee6+Ghoa0ZMkSbd++XR6PZ4FTzV59fb0effRRXX755eFZdXW1Nm/erFOnTikpKUlVVVVyOp1qamrS448/LpvNpjVr1uhHP/rRon7vZ5v9f//7nwoLC6d89PnatWt1/fXXz2t2yh0ADMS2DAAYiHIHAANR7gBgIModAAxEuQOAgSh3ADAQ5Q4ABvq/C7clqgTwF1wAAAAASUVORK5CYII=
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -14725,17 +13741,9 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>As see, the date column (date_added) is not very data friendly. So we need to convert these to actual date type.</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[140]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show the distribution of type</span>
@@ -14753,13 +13761,13 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[140]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f1c14a6d0b8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0a2e1a15c0&gt;</pre>
 </div>
 
 </div>
@@ -14785,7 +13793,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[141]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s2">&quot;pie&quot;</span><span class="p">,</span> <span class="n">autopct</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%.2f</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -14801,13 +13809,13 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[141]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f1c14138ac8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0a2e128b00&gt;</pre>
 </div>
 
 </div>
@@ -14833,7 +13841,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[142]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remove Duplicate Movies</span>
@@ -14855,13 +13863,13 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="1.-How-many-Movies/TV-Shows-released-each-year?">1. How many Movies/TV Shows released each year?<a class="anchor-link" href="#1.-How-many-Movies/TV-Shows-released-each-year?">&#182;</a></h4>
+<h4 id="1.-What-are-the-oldest-movies/TV-Shows-on-Netflix?-(Given-5)">1. What are the oldest movies/TV Shows on Netflix? (Given 5)<a class="anchor-link" href="#1.-What-are-the-oldest-movies/TV-Shows-on-Netflix?-(Given-5)">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[143]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
@@ -14903,12 +13911,12 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[144]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remove id column</span>
 <span class="c1">#df.drop(columns=[&#39;show_id&#39;,&#39;description&#39;],inplace=True)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;release_year&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;release_year&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14921,7 +13929,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[144]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -15034,849 +14042,8 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
       <td>Documentaries</td>
       <td>This installment of Frank Capra's acclaimed do...</td>
     </tr>
-    <tr>
-      <th>8763</th>
-      <td>s8764</td>
-      <td>Movie</td>
-      <td>WWII: Report from the Aleutians</td>
-      <td>John Huston</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1943</td>
-      <td>TV-PG</td>
-      <td>45 min</td>
-      <td>Documentaries</td>
-      <td>Filmmaker John Huston narrates this Oscar-nomi...</td>
-    </tr>
-    <tr>
-      <th>8640</th>
-      <td>s8641</td>
-      <td>Movie</td>
-      <td>Tunisian Victory</td>
-      <td>Frank Capra, John Huston, Hugh Stewart, Roy Bo...</td>
-      <td>Burgess Meredith</td>
-      <td>United States, United Kingdom</td>
-      <td>March 31, 2017</td>
-      <td>1944</td>
-      <td>TV-14</td>
-      <td>76 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>British and American troops join forces to lib...</td>
-    </tr>
-    <tr>
-      <th>8436</th>
-      <td>s8437</td>
-      <td>Movie</td>
-      <td>The Negro Soldier</td>
-      <td>Stuart Heisler</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1944</td>
-      <td>TV-14</td>
-      <td>40 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>This documentary urged African Americans to en...</td>
-    </tr>
-    <tr>
-      <th>8419</th>
-      <td>s8420</td>
-      <td>Movie</td>
-      <td>The Memphis Belle: A Story of a\nFlying Fortress</td>
-      <td>William Wyler</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1944</td>
-      <td>TV-PG</td>
-      <td>40 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>This documentary centers on the crew of the B-...</td>
-    </tr>
-    <tr>
-      <th>7930</th>
-      <td>s7931</td>
-      <td>Movie</td>
-      <td>San Pietro</td>
-      <td>John Huston</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1945</td>
-      <td>TV-14</td>
-      <td>32 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>After the Allies invade Italy, the Liri Valley...</td>
-    </tr>
-    <tr>
-      <th>1331</th>
-      <td>s1332</td>
-      <td>TV Show</td>
-      <td>Five Came Back: The Reference Films</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>February 9, 2021</td>
-      <td>1945</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>TV Shows</td>
-      <td>This collection includes 12 World War II-era p...</td>
-    </tr>
-    <tr>
-      <th>7219</th>
-      <td>s7220</td>
-      <td>Movie</td>
-      <td>Know Your Enemy - Japan</td>
-      <td>Frank Capra, Joris Ivens</td>
-      <td>Walter Huston, Dana Andrews</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1945</td>
-      <td>TV-14</td>
-      <td>63 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>Though culturally insensitive by modern standa...</td>
-    </tr>
-    <tr>
-      <th>7575</th>
-      <td>s7576</td>
-      <td>Movie</td>
-      <td>Nazi Concentration Camps</td>
-      <td>George Stevens</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1945</td>
-      <td>TV-MA</td>
-      <td>59 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>Shocking footage shows Nazi concentration camp...</td>
-    </tr>
-    <tr>
-      <th>7743</th>
-      <td>s7744</td>
-      <td>TV Show</td>
-      <td>Pioneers of African-American Cinema</td>
-      <td>Oscar Micheaux, Spencer Williams, Richard E. N...</td>
-      <td>NaN</td>
-      <td>United States</td>
-      <td>February 1, 2017</td>
-      <td>1946</td>
-      <td>TV-14</td>
-      <td>1 Season</td>
-      <td>TV Shows</td>
-      <td>This newly preserved collection features more ...</td>
-    </tr>
-    <tr>
-      <th>7294</th>
-      <td>s7295</td>
-      <td>Movie</td>
-      <td>Let There Be Light</td>
-      <td>John Huston</td>
-      <td>Walter Huston</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1946</td>
-      <td>TV-PG</td>
-      <td>58 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>Some returning combat veterans suffer scars th...</td>
-    </tr>
-    <tr>
-      <th>8587</th>
-      <td>s8588</td>
-      <td>Movie</td>
-      <td>Thunderbolt</td>
-      <td>William Wyler, John Sturges</td>
-      <td>James Stewart, Lloyd Bridges</td>
-      <td>United States</td>
-      <td>March 31, 2017</td>
-      <td>1947</td>
-      <td>TV-PG</td>
-      <td>42 min</td>
-      <td>Classic Movies, Documentaries</td>
-      <td>A P-47 Thunderbolt squadron is shown in prepar...</td>
-    </tr>
-    <tr>
-      <th>2375</th>
-      <td>s2376</td>
-      <td>Movie</td>
-      <td>The Blazing Sun</td>
-      <td>Youssef Chahine</td>
-      <td>Omar Sharif, Faten Hamama, Zaki Rostom, Farid ...</td>
-      <td>Egypt</td>
-      <td>June 18, 2020</td>
-      <td>1954</td>
-      <td>TV-14</td>
-      <td>116 min</td>
-      <td>Classic Movies, Dramas, International Movies</td>
-      <td>Competition between sugar cane producers turns...</td>
-    </tr>
-    <tr>
-      <th>1699</th>
-      <td>s1700</td>
-      <td>Movie</td>
-      <td>White Christmas</td>
-      <td>Michael Curtiz</td>
-      <td>Bing Crosby, Danny Kaye, Rosemary Clooney, Ver...</td>
-      <td>United States</td>
-      <td>November 15, 2020</td>
-      <td>1954</td>
-      <td>TV-G</td>
-      <td>120 min</td>
-      <td>Children &amp; Family Movies, Classic Movies, Come...</td>
-      <td>Two war buddies fall for two sisters and follo...</td>
-    </tr>
-    <tr>
-      <th>7954</th>
-      <td>s7955</td>
-      <td>Movie</td>
-      <td>Scandal in Sorrento</td>
-      <td>Dino Risi</td>
-      <td>Vittorio De Sica, Sophia Loren, Lea Padovani, ...</td>
-      <td>Italy, France</td>
-      <td>November 13, 2020</td>
-      <td>1955</td>
-      <td>TV-PG</td>
-      <td>93 min</td>
-      <td>Classic Movies, Comedies, Independent Movies</td>
-      <td>When a marshal moves back to his hometown, he ...</td>
-    </tr>
-    <tr>
-      <th>8506</th>
-      <td>s8507</td>
-      <td>Movie</td>
-      <td>The Sign of Venus</td>
-      <td>Dino Risi</td>
-      <td>Sophia Loren, Franca Valeri, Vittorio De Sica,...</td>
-      <td>Italy</td>
-      <td>November 13, 2020</td>
-      <td>1955</td>
-      <td>TV-14</td>
-      <td>97 min</td>
-      <td>Classic Movies, Comedies, Independent Movies</td>
-      <td>While suitors swoon over her cousin, a single ...</td>
-    </tr>
-    <tr>
-      <th>7839</th>
-      <td>s7840</td>
-      <td>Movie</td>
-      <td>Rebel Without a Cause</td>
-      <td>Nicholas Ray</td>
-      <td>James Dean, Natalie Wood, Sal Mineo, Jim Backu...</td>
-      <td>United States</td>
-      <td>November 1, 2019</td>
-      <td>1955</td>
-      <td>PG-13</td>
-      <td>111 min</td>
-      <td>Classic Movies, Dramas</td>
-      <td>When Jim Stark arrives in a new town with his ...</td>
-    </tr>
-    <tr>
-      <th>6784</th>
-      <td>s6785</td>
-      <td>Movie</td>
-      <td>Forbidden Planet</td>
-      <td>Fred M. Wilcox</td>
-      <td>Leslie Nielsen, Walter Pidgeon, Anne Francis, ...</td>
-      <td>United States</td>
-      <td>November 1, 2019</td>
-      <td>1956</td>
-      <td>G</td>
-      <td>98 min</td>
-      <td>Action &amp; Adventure, Classic Movies, Sci-Fi &amp; F...</td>
-      <td>A pulp-fiction sci-fi classic, Forbidden Plane...</td>
-    </tr>
-    <tr>
-      <th>2369</th>
-      <td>s2370</td>
-      <td>Movie</td>
-      <td>Dark Waters</td>
-      <td>Youssef Chahine</td>
-      <td>Faten Hamama, Omar Sharif, Ahmed Ramzy, Hussei...</td>
-      <td>Egypt</td>
-      <td>June 18, 2020</td>
-      <td>1956</td>
-      <td>TV-14</td>
-      <td>104 min</td>
-      <td>Classic Movies, Dramas, International Movies</td>
-      <td>A fisherman returns home after a three-year ab...</td>
-    </tr>
-    <tr>
-      <th>2368</th>
-      <td>s2369</td>
-      <td>Movie</td>
-      <td>Cairo Station</td>
-      <td>Youssef Chahine</td>
-      <td>Farid Shawqy, Hind Rostom, Youssef Chahine, Ha...</td>
-      <td>Egypt</td>
-      <td>June 18, 2020</td>
-      <td>1958</td>
-      <td>TV-14</td>
-      <td>73 min</td>
-      <td>Classic Movies, Dramas, International Movies</td>
-      <td>A Cairo newsstand vendor's fantasies morph int...</td>
-    </tr>
-    <tr>
-      <th>6431</th>
-      <td>s6432</td>
-      <td>Movie</td>
-      <td>Cat on a Hot Tin Roof</td>
-      <td>Richard Brooks</td>
-      <td>Elizabeth Taylor, Paul Newman, Burl Ives, Jack...</td>
-      <td>United States</td>
-      <td>November 1, 2019</td>
-      <td>1958</td>
-      <td>NR</td>
-      <td>108 min</td>
-      <td>Classic Movies, Dramas</td>
-      <td>Members of a Southern clan scramble to curry f...</td>
-    </tr>
-    <tr>
-      <th>6853</th>
-      <td>s6854</td>
-      <td>Movie</td>
-      <td>Gigi</td>
-      <td>Vincente Minnelli, Charles Walters</td>
-      <td>Leslie Caron, Maurice Chevalier, Louis Jourdan...</td>
-      <td>United States</td>
-      <td>November 1, 2019</td>
-      <td>1958</td>
-      <td>G</td>
-      <td>115 min</td>
-      <td>Classic Movies, Comedies, Music &amp; Musicals</td>
-      <td>Gigi's an avant-garde French waif being groome...</td>
-    </tr>
-    <tr>
-      <th>542</th>
-      <td>s543</td>
-      <td>Movie</td>
-      <td>Ujala</td>
-      <td>Naresh Saigal</td>
-      <td>Mala Sinha, Shammi Kapoor, Raaj Kumar, Leela C...</td>
-      <td>India</td>
-      <td>July 6, 2021</td>
-      <td>1959</td>
-      <td>TV-14</td>
-      <td>143 min</td>
-      <td>Dramas, International Movies</td>
-      <td>An honest man dreams of a better life for his ...</td>
-    </tr>
-    <tr>
-      <th>5220</th>
-      <td>s5221</td>
-      <td>Movie</td>
-      <td>Singapore</td>
-      <td>Shakti Samanta</td>
-      <td>Shammi Kapoor, Padmini, Maria Menado, Shashika...</td>
-      <td>India, Malaysia</td>
-      <td>October 15, 2017</td>
-      <td>1960</td>
-      <td>TV-PG</td>
-      <td>158 min</td>
-      <td>Comedies, Dramas, International Movies</td>
-      <td>When his employee disappears in Singapore, Shy...</td>
-    </tr>
-    <tr>
-      <th>7133</th>
-      <td>s7134</td>
-      <td>Movie</td>
-      <td>Jis Desh Men Ganga Behti Hai</td>
-      <td>Radhu Karmakar</td>
-      <td>Raj Kapoor, Padmini, Pran, Chanchal, Lalita Pa...</td>
-      <td>NaN</td>
-      <td>December 31, 2019</td>
-      <td>1960</td>
-      <td>TV-14</td>
-      <td>181 min</td>
-      <td>Action &amp; Adventure, Dramas, International Movies</td>
-      <td>Falling in with a band of outlaws during a hol...</td>
-    </tr>
-    <tr>
-      <th>7637</th>
-      <td>s7638</td>
-      <td>Movie</td>
-      <td>Ocean's Eleven</td>
-      <td>Lewis Milestone</td>
-      <td>Frank Sinatra, Dean Martin, Sammy Davis Jr., P...</td>
-      <td>United States</td>
-      <td>November 1, 2019</td>
-      <td>1960</td>
-      <td>TV-PG</td>
-      <td>127 min</td>
-      <td>Action &amp; Adventure, Classic Movies, Comedies</td>
-      <td>Frank Sinatra leads an all-star cast as Danny ...</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>834</th>
-      <td>s835</td>
-      <td>Movie</td>
-      <td>Blue Miracle</td>
-      <td>Julio Quintana</td>
-      <td>Jimmy Gonzales, Dennis Quaid, Anthony Gonzalez...</td>
-      <td>United States</td>
-      <td>May 27, 2021</td>
-      <td>2021</td>
-      <td>TV-PG</td>
-      <td>97 min</td>
-      <td>Children &amp; Family Movies, Dramas, Faith &amp; Spir...</td>
-      <td>To save their cash-strapped orphanage, a guard...</td>
-    </tr>
-    <tr>
-      <th>833</th>
-      <td>s834</td>
-      <td>TV Show</td>
-      <td>Black Space</td>
-      <td>NaN</td>
-      <td>Guri Alfi, Shai Avivi, Assi Levy, Reut Alush, ...</td>
-      <td>Israel</td>
-      <td>May 27, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>Crime TV Shows, International TV Shows, TV Dramas</td>
-      <td>A rogue detective with unorthodox means leads ...</td>
-    </tr>
-    <tr>
-      <th>832</th>
-      <td>s833</td>
-      <td>TV Show</td>
-      <td>Word of Honor</td>
-      <td>Gary Sing</td>
-      <td>Zhang Zhehan, Gong Jun, Zhou Ye, Asher Ma, Sun...</td>
-      <td>NaN</td>
-      <td>May 28, 2021</td>
-      <td>2021</td>
-      <td>TV-14</td>
-      <td>1 Season</td>
-      <td>International TV Shows, TV Action &amp; Adventure,...</td>
-      <td>A disillusioned royal magistrate sets out for ...</td>
-    </tr>
-    <tr>
-      <th>831</th>
-      <td>s832</td>
-      <td>TV Show</td>
-      <td>The Least Expected Day: Inside the Movistar Te...</td>
-      <td>José Larraza, Marc Pons</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>May 28, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>Docuseries, International TV Shows, Spanish-La...</td>
-      <td>Pro cycling’s Movistar Team sets their sights ...</td>
-    </tr>
-    <tr>
-      <th>830</th>
-      <td>s831</td>
-      <td>TV Show</td>
-      <td>The Kominsky Method</td>
-      <td>NaN</td>
-      <td>Michael Douglas, Alan Arkin, Sarah Baker, Nanc...</td>
-      <td>United States</td>
-      <td>May 28, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>3 Seasons</td>
-      <td>TV Comedies, TV Dramas</td>
-      <td>Acting coach Sandy Kominsky and best friend No...</td>
-    </tr>
-    <tr>
-      <th>1551</th>
-      <td>s1552</td>
-      <td>TV Show</td>
-      <td>Hilda</td>
-      <td>NaN</td>
-      <td>Bella Ramsey, Ameerah Falzon-Ojo, Oliver Nelso...</td>
-      <td>United Kingdom, Canada, United States</td>
-      <td>December 14, 2020</td>
-      <td>2021</td>
-      <td>TV-Y7</td>
-      <td>2 Seasons</td>
-      <td>Kids' TV</td>
-      <td>Fearless, free-spirited Hilda finds new friend...</td>
-    </tr>
-    <tr>
-      <th>837</th>
-      <td>s838</td>
-      <td>TV Show</td>
-      <td>Ragnarok</td>
-      <td>NaN</td>
-      <td>David Stakston, Jonas Strand Gravli, Herman Tø...</td>
-      <td>Norway, Denmark</td>
-      <td>May 27, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>International TV Shows, TV Action &amp; Adventure,...</td>
-      <td>In a Norwegian town poisoned by pollution and ...</td>
-    </tr>
-    <tr>
-      <th>890</th>
-      <td>s891</td>
-      <td>TV Show</td>
-      <td>Castlevania</td>
-      <td>NaN</td>
-      <td>Richard Armitage, James Callis, Graham McTavis...</td>
-      <td>United States</td>
-      <td>May 13, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>4 Seasons</td>
-      <td>Anime Series, TV Horror, TV Thrillers</td>
-      <td>A vampire hunter fights to save a besieged cit...</td>
-    </tr>
-    <tr>
-      <th>853</th>
-      <td>s854</td>
-      <td>Movie</td>
-      <td>Army of the Dead</td>
-      <td>Zack Snyder</td>
-      <td>Dave Bautista, Ella Purnell, Omari Hardwick, G...</td>
-      <td>United States</td>
-      <td>May 21, 2021</td>
-      <td>2021</td>
-      <td>R</td>
-      <td>148 min</td>
-      <td>Action &amp; Adventure, Horror Movies</td>
-      <td>After a zombie outbreak in Las Vegas, a group ...</td>
-    </tr>
-    <tr>
-      <th>855</th>
-      <td>s856</td>
-      <td>TV Show</td>
-      <td>Jurassic World Camp Cretaceous</td>
-      <td>NaN</td>
-      <td>Paul-Mikél Williams, Jenna Ortega, Sean Giambr...</td>
-      <td>United States</td>
-      <td>May 21, 2021</td>
-      <td>2021</td>
-      <td>TV-Y7</td>
-      <td>3 Seasons</td>
-      <td>Kids' TV, TV Action &amp; Adventure, TV Sci-Fi &amp; F...</td>
-      <td>Six teens invited to attend a state-of-the-art...</td>
-    </tr>
-    <tr>
-      <th>888</th>
-      <td>s889</td>
-      <td>Movie</td>
-      <td>The Upshaws - The Afterparty</td>
-      <td>NaN</td>
-      <td>David Spade, London Hughes, Fortune Feimster, ...</td>
-      <td>NaN</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-14</td>
-      <td>32 min</td>
-      <td>Comedies</td>
-      <td>The comedic dream team from "The Upshaws" disc...</td>
-    </tr>
-    <tr>
-      <th>884</th>
-      <td>s885</td>
-      <td>TV Show</td>
-      <td>Move to Heaven</td>
-      <td>NaN</td>
-      <td>Lee Je-hoon, Tang Jun-sang, Hong Seung-hee, Ji...</td>
-      <td>South Korea</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>International TV Shows, TV Dramas</td>
-      <td>Finding life in all that’s left behind, a deta...</td>
-    </tr>
-    <tr>
-      <th>883</th>
-      <td>s884</td>
-      <td>TV Show</td>
-      <td>Love, Death &amp; Robots</td>
-      <td>NaN</td>
-      <td>Topher Grace, Mary Elizabeth Winstead, Gary Co...</td>
-      <td>United States</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>TV Action &amp; Adventure, TV Horror, TV Sci-Fi &amp; ...</td>
-      <td>Terrifying creatures, wicked surprises and dar...</td>
-    </tr>
-    <tr>
-      <th>882</th>
-      <td>s883</td>
-      <td>Movie</td>
-      <td>Jungle Beat: The Movie</td>
-      <td>Brent Dawes</td>
-      <td>Ed Kear, David Menkin, Ina Marie Smith, John G...</td>
-      <td>Mauritius</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-Y7</td>
-      <td>90 min</td>
-      <td>Children &amp; Family Movies, Comedies</td>
-      <td>When a lost and lonely alien crash-lands on Ea...</td>
-    </tr>
-    <tr>
-      <th>881</th>
-      <td>s882</td>
-      <td>Movie</td>
-      <td>I Am All Girls</td>
-      <td>Donovan Marsh</td>
-      <td>Erica Wessels, Hlubi Mboya, Deon Lotz, Brendon...</td>
-      <td>South Africa</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>107 min</td>
-      <td>Dramas, International Movies, Thrillers</td>
-      <td>A relentless detective finds common ground wit...</td>
-    </tr>
-    <tr>
-      <th>880</th>
-      <td>s881</td>
-      <td>TV Show</td>
-      <td>Haunted</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>United States, Czech Republic</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>3 Seasons</td>
-      <td>Reality TV, TV Horror, TV Thrillers</td>
-      <td>Real people sit down with friends and family t...</td>
-    </tr>
-    <tr>
-      <th>879</th>
-      <td>s880</td>
-      <td>TV Show</td>
-      <td>Halston</td>
-      <td>Daniel Minahan</td>
-      <td>Ewan McGregor, Bill Pullman, Rebecca Dayan, Da...</td>
-      <td>United States</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>TV Dramas</td>
-      <td>His name built an empire. His style defined an...</td>
-    </tr>
-    <tr>
-      <th>878</th>
-      <td>s879</td>
-      <td>Movie</td>
-      <td>Ferry</td>
-      <td>Cecilia Verheyden</td>
-      <td>Frank Lammers, Elise Schaap, Huub Stapel, Moni...</td>
-      <td>Belgium, Netherlands</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>107 min</td>
-      <td>Dramas, International Movies, Thrillers</td>
-      <td>Before he built a drug empire, Ferry Bouman re...</td>
-    </tr>
-    <tr>
-      <th>854</th>
-      <td>s855</td>
-      <td>Movie</td>
-      <td>Creating an Army of the Dead</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>May 21, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>29 min</td>
-      <td>Documentaries</td>
-      <td>Zack Snyder and his "Army of the Dead" team di...</td>
-    </tr>
-    <tr>
-      <th>877</th>
-      <td>s878</td>
-      <td>Movie</td>
-      <td>Cinema Bandi</td>
-      <td>Praveen Kandregula</td>
-      <td>Vikas Vasistha, Sandeep Varanasi, Rag Mayur, T...</td>
-      <td>India</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>99 min</td>
-      <td>Comedies, Independent Movies, International Mo...</td>
-      <td>A struggling rickshaw driver’s life takes a ro...</td>
-    </tr>
-    <tr>
-      <th>874</th>
-      <td>s875</td>
-      <td>TV Show</td>
-      <td>Booba: Food Puzzle</td>
-      <td>NaN</td>
-      <td>Artem Kretov, Elena Solovieva, Vyacheslav Kataev</td>
-      <td>United Kingdom</td>
-      <td>May 15, 2021</td>
-      <td>2021</td>
-      <td>TV-Y</td>
-      <td>1 Season</td>
-      <td>Kids' TV</td>
-      <td>Curious Booba is now a chef! With friends Lool...</td>
-    </tr>
-    <tr>
-      <th>873</th>
-      <td>s874</td>
-      <td>Movie</td>
-      <td>Ahaan</td>
-      <td>Nikhil Pherwani</td>
-      <td>Arif Zakaria, Abuli Mamaji, Niharika Singh, Ra...</td>
-      <td>India</td>
-      <td>May 15, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>81 min</td>
-      <td>Dramas, Independent Movies, International Movies</td>
-      <td>Jilted by his wife, a man with OCD finds eye-o...</td>
-    </tr>
-    <tr>
-      <th>871</th>
-      <td>s872</td>
-      <td>Movie</td>
-      <td>Sardar Ka Grandson</td>
-      <td>Kaashvie Nair</td>
-      <td>Arjun Kapoor, Neena Gupta, Rakul Preet Singh, ...</td>
-      <td>India</td>
-      <td>May 18, 2021</td>
-      <td>2021</td>
-      <td>TV-14</td>
-      <td>140 min</td>
-      <td>Comedies, Dramas, International Movies</td>
-      <td>A devoted grandson’s mission to reunite his ai...</td>
-    </tr>
-    <tr>
-      <th>870</th>
-      <td>s871</td>
-      <td>Movie</td>
-      <td>Amy Tan: Unintended Memoir</td>
-      <td>James Redford</td>
-      <td>Amy Tan</td>
-      <td>United States</td>
-      <td>May 18, 2021</td>
-      <td>2021</td>
-      <td>TV-14</td>
-      <td>101 min</td>
-      <td>Documentaries</td>
-      <td>From her painful past to her successful career...</td>
-    </tr>
-    <tr>
-      <th>869</th>
-      <td>s870</td>
-      <td>TV Show</td>
-      <td>Who Killed Sara?</td>
-      <td>NaN</td>
-      <td>Manolo Cardona, Ginés García Millán, Carolina ...</td>
-      <td>Mexico</td>
-      <td>May 19, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>Crime TV Shows, International TV Shows, Spanis...</td>
-      <td>Hell-bent on exacting revenge and proving he w...</td>
-    </tr>
-    <tr>
-      <th>862</th>
-      <td>s863</td>
-      <td>TV Show</td>
-      <td>Special</td>
-      <td>NaN</td>
-      <td>Ryan O'Connell, Jessica Hecht, Punam Patel, Ma...</td>
-      <td>United States</td>
-      <td>May 20, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>TV Comedies</td>
-      <td>A young gay man with cerebral palsy branches o...</td>
-    </tr>
-    <tr>
-      <th>861</th>
-      <td>s862</td>
-      <td>Movie</td>
-      <td>Little Singham Future mein Satakli</td>
-      <td>Prakash Satam</td>
-      <td>Anamaya Verma, Ganesh Divekar, Jigna Bharadhwa...</td>
-      <td>NaN</td>
-      <td>May 20, 2021</td>
-      <td>2021</td>
-      <td>TV-Y7</td>
-      <td>47 min</td>
-      <td>Children &amp; Family Movies, Comedies</td>
-      <td>Little Singham and his crew travel to the year...</td>
-    </tr>
-    <tr>
-      <th>857</th>
-      <td>s858</td>
-      <td>TV Show</td>
-      <td>The Neighbor</td>
-      <td>NaN</td>
-      <td>Quim Gutiérrez, Clara Lago, Adrián Pino, Catel...</td>
-      <td>Spain</td>
-      <td>May 21, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>International TV Shows, Spanish-Language TV Sh...</td>
-      <td>Self-centered Javier's life gets a bit messy w...</td>
-    </tr>
-    <tr>
-      <th>876</th>
-      <td>s877</td>
-      <td>TV Show</td>
-      <td>Alma Matters</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>India</td>
-      <td>May 14, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>Docuseries, International TV Shows</td>
-      <td>Alumni of India’s elite academic institutes sh...</td>
-    </tr>
-    <tr>
-      <th>965</th>
-      <td>s966</td>
-      <td>TV Show</td>
-      <td>Yasuke</td>
-      <td>NaN</td>
-      <td>LaKeith Stanfield, Takehiro Hira, Maya Tanida,...</td>
-      <td>NaN</td>
-      <td>April 29, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>Anime Series, International TV Shows</td>
-      <td>A peaceful boatman once known as the Black Sam...</td>
-    </tr>
   </tbody>
 </table>
-<p>8807 rows × 12 columns</p>
 </div>
 </div>
 
@@ -15895,7 +14062,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[145]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">country_count</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -15931,7 +14098,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[145]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -15950,7 +14117,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA50AAAGmCAYAAAD/DuANAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBodHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAIABJREFUeJzt3XlcVdX+//H3OXBQMRscEHMIpBRKcdbv1dIKh1s3bzmQQ1KZQ9/M4VFeL6RyU8scy6/ikANOiKYXtUnT0vxeu6VWxwEl1JxKRL2kKDgehP37o1/nG4GmyeLI4fX853LWXnvtz96rXff9WPucbbMsyxIAAAAAAAbYPV0AAAAAAMB7EToBAAAAAMYQOgEAAAAAxhA6AQAAAADGEDoBAAAAAMYQOgEAAAAAxvh6ugBv4XQ6PV0CAAAAAHhUkyZNCrQROotQYRcY3ik1NVVhYWGeLgPFhPkuXZjv0oX5Ll2Y79KF+S5+V1uI4/FaAAAAAIAxhE4AAAAAgDE2y7IsTxfhDZxOpzac2+DpMgAAAAB4qeg20Z4u4ZqcTmehXzlkpRMAAAAAYAyhEwAAAABgDKETAAAAAGAMoRMAAAAAYAyhEwAAAABgDKETAAAAAGAMoRMAAAAAYAyhEwAAAABgDKETAAAAAGAMoRMAAAAAYEyRhc5t27Zp8ODB+dri4uK0ZMmSq+4zZ84c7dixQ5K0fv366z7WhAkTtGrVqnxtOTk5+sc//qHu3bvrmWee0bPPPqv09HRJ0saNG+Vyua46Xnp6upKTk6/7+AAAAACA6+PRlc7+/furUaNGSktL05o1a25qrI8//lh2u13vvfeeEhMT1alTJy1btkyStHDhQuXk5Fx1361btxI6AQAAAMAA3+I4SFpammJiYlSzZk3t27dPYWFhGjt2rGJiYtShQwctW7ZMycnJmj59up5//nkNHz5cZ8+eVW5urkaOHKnQ0FB98MEHmjdvnoKCgmRZlu677758x8jKytL58+fdnzt16iRJev/997Vz507169dPCxcu1Ntvv63k5GRdvnxZPXr0UEREhKZPny5fX19Vq1ZN99xzj8aMGSObzaby5ctr/PjxKleunIYNG6aMjAy5XC4NGjRIrVu3Lo5LBwAAAAAlWrGETklKSUnRlClTVKlSJbVu3VpZWVnubX369FFiYqIGDhyoGTNm6KGHHlJkZKQOHDigsWPHav78+ZoyZYpWrlyp22+/XZ07dy4wfseOHbV69Wp16NBBbdq0Ufv27dW0aVM99dRTmjZtmubOnSvLslS9enW99tprunTpktq2bavIyEh16tRJd911lyIiIvTcc89pzJgxCgoKUmJiohITE9W6dWtlZmYqMTFRWVlZ+te//lVclw0AAAAASjTjodNms0mSatWqpSpVqkiSAgIClJ2dXWj/HTt26PTp0/rwww8lSRcvXlRmZqbKly+vSpUqSZIaN25cYL+KFStq1apV2r59u/79739r6NCh6tKlS77vmZYpU0Znz55V9+7d5XA4lJmZWWCc5ORkxcbGSpJcLpfq16+v2rVr6/z58xo2bJjatWunv/zlLzdxRQAAAACg9Ciy0FmxYsV8q5eSdPr0adWtW1eS5OPjk2+bZVmFjuNwOBQbG6tGjRrlG8du/7+vnxa2r8vlkq+vr5o2baqmTZsqMjJSUVFR+ULn119/ra1btyohIUEOhyPfMX5Rrlw5LV682B2Wf7FixQpt375dq1ev1qZNmzRu3LirXQoAAAAAwP9XZD8kFBQUpBMnTuiHH36Q9HNQ3Lp1a6GrkgWKsNvdvy7boEEDbdiwQZJ04MABLViwQHfeeaeys7OVlZWlnJwcbd++vcAYw4cP18qVK92fT5w4oZo1a0r6ebXV5XIpMzNTgYGBcjgc2rhxo3Jzc+VyudzbJSk0NFSbN2+WJK1Zs0ZbtmxRSkqKPvroIzVt2lSjRo3SwYMHb+JKAQAAAEDpUWQrnQ6HQ5MnT1ZsbKwsy5JlWYqNjVXlypWVlpZ2zX1DQkK0d+9evfXWWxo8eLBee+019ezZU3l5eRoxYoTsdrsGDhyoXr16qXr16gV+REj6OXT+4x//0KpVq+RwOORwODRq1ChJUvPmzRUVFaXZs2dr7ty56tWrl9q2bauHH35Yo0aN0l/+8hdFR0ercuXKGjFihGJjYzV37lyVKVNGb7/9tmw2m9555x0tX75cPj4+6tOnT1FdNgAAAADwajbras+54oY4nU5tOLfB02UAAAAA8FLRbaI9XcI1OZ1ONWnSpEC7R9/TCQAAAADwboROAAAAAIAxhE4AAAAAgDGETgAAAACAMYROAAAAAIAxhE4AAAAAgDGETgAAAACAMYROAAAAAIAxhE4AAAAAgDGETgAAAACAMb6eLsCbRLeJ9nQJKCapqakKCwvzdBkoJsx36cJ8ly7Md+nCfJcuzPetg5VOAAAAAIAxhE4AAAAAgDGETgAAAACAMYROAAAAAIAxhE4AAAAAgDGETgAAAACAMYROAAAAAIAxvKezCP3vxzs9XQKK0cmDzHdpcvLgTj38RENPlwEAAFDisNIJAAAAADCG0AkAAAAAMIbQCQAAAAAwhtAJAAAAADCG0AkAAAAAMIbQCQAAAAAwhtAJAAAAADCG0AkAAAAAMIbQCQAAAAAwhtAJAAAAADCm1ITOtLQ0de7c+br6du7cWWlpaZozZ4527NhhuDIAAAAA8F6+ni7gVta/f39PlwAAAAAAJVqpC50xMTEKCAhQSkqK0tPTNXnyZD3wwAN68803lZycrJCQEOXk5Lj7dujQQc2aNdPQoUN14cIFXbp0SbGxsQoPD/fwmQAAAADAra/UhU5Jcrlcio+P17Jly/T++++rTJky2r59u5KSknTy5Em1a9cuX/+MjAxFRkaqbdu22rJli+bOnau4uDgPVQ8AAAAAJUepDJ1NmzaVJAUGBio5OVkHDhxQgwYNZLfbVa1aNdWsWTNf/8qVK2vmzJmKj4+Xy+WSv7+/J8oGAAAAgBKn1PyQ0K/5+Pi4/7YsS5ZlyW7/v0uRl5eXr/+iRYtUtWpVLVu2TKNGjSquMgEAAACgxCuVofO3goODlZKSIsuydOzYMR07dizf9szMTNWqVUuStGHDBvd3PgEAAAAA10bolBQaGqo6deqoW7dumjp1qkJDQ/Ntf/LJJ7VgwQK98MILCg8PV0ZGhlauXOmhagEAAACg5LBZlmV5ughv4HQ6lX3c5/c7AiixHn6ioadLQDFITU1VWFiYp8tAMWG+Sxfmu3Rhvouf0+lUkyZNCrSz0gkAAAAAMIbQCQAAAAAwhtAJAAAAADCG0AkAAAAAMIbQCQAAAAAwhtAJAAAAADCG0AkAAAAAMIbQCQAAAAAwhtAJAAAAADCG0AkAAAAAMMbX0wV4k4efaOjpElBMUlNTFRYW5ukyUEyYbwAAgD+OlU4AAAAAgDGETgAAAACAMYROAAAAAIAxhE4AAAAAgDGETgAAAACAMYROAAAAAIAxhE4AAAAAgDG8p7MIZf5rpqdLQDEJlJT5n00eO/5dbQZ47NgAAADAjWClEwAAAABgDKETAAAAAGAMoRMAAAAAYAyhEwAAAABgDKETAAAAAGAMoRMAAAAAYAyhEwAAAABgDKETAAAAAGAMoRMAAAAAYAyhEwAAAABgzDVD57Zt2zR48OB8bXFxcVqyZMlV95kzZ4527NghSVq/fv11FzJhwgStWrUqX9uqVas0YcIE9+dx48a5P7/yyiu6dOnSdY//W5s2bVJMTMwf3h8AAAAA8PuKfKWzf//+atSokdLS0rRmzZoiG3flypU6evSohg0bJkmaMmWKypYtW2TjAwAAAACKnu8f3TEtLU0xMTGqWbOm9u3bp7CwMI0dO1YxMTHq0KGDli1bpuTkZE2fPl3PP/+8hg8frrNnzyo3N1cjR45UaGioPvjgA82bN09BQUGyLEv33Xdfocfavn27VqxYoQULFshu/zknP/roo/roo4/0xhtvKCAgQCkpKUpPT9fkyZP1wAMP6M0339T27dtVr1497d+/X5MnT9b58+cVHR2tqlWrKiAgwD3+okWLtHbtWklSRESE+vfvr5iYGFWsWFEpKSk6ffq0+vXrp1WrVikzM1NLlixRhQoV/uilAwAAAIBS46ZWOlNSUvTqq68qKSlJ//rXv5SVleXe1qdPHzVv3lwDBw7UokWL9NBDD2nRokUaNWqUJkyYIMuyNGXKFC1cuFDvvPOOfvjhh0KPkZ6eroEDByomJkb+/v6F9nG5XIqPj9ezzz6r999/X/v27ZPT6VRSUpKeeeYZJScnS5JmzpypgQMHavbs2e7wevToUa1evVqJiYlKTEzUJ598oh9//FGS5Ovrq0WLFqlOnTrasWOHFi5cqDp16mjbtm03c9kAAAAAoNT4QyudNptNklSrVi1VqVJFkhQQEKDs7OxC++/YsUOnT5/Whx9+KEm6ePGiMjMzVb58eVWqVEmS1Lhx40L3TU5OVv/+/TVx4kQlJCTI17dgyU2bNpUkBQYGKjk5WQcPHlTDhg1lt9tVt25d3X333ZKkgwcPuo/TokULbd68WampqWrQoIF73PDwcO3du9f99y/nVrt2bUlS5cqVr3qeAAAAAID8rhk6K1asmG/1UpJOnz6tunXrSpJ8fHzybbMsq9BxHA6HYmNj1ahRo3zj/LLaeK19//znP+v555/Xjz/+qLi4OL3yyisF+vy6jl/G+SUYS3Ifx7Isd3teXp6736+PbVmWu/+vxy3sGAAAAACAa7vm47VBQUE6ceKE+9HX06dPa+vWrVddlcw3sN0ul8slSWrQoIE2bNggSTpw4IAWLFigO++8U9nZ2crKylJOTo62b99+zfGio6P1+eefa8uWLb977Jo1ayolJUWWZengwYNKT0+XJAUHB2vPnj2S5H5ENiwsTDt37tSVK1d05coV7dq1S2FhYb97DAAAAADA77vmSqfD4dDkyZMVGxsry7JkWZZiY2NVuXJlpaWlXXPgkJAQ7d27V2+99ZYGDx6s1157TT179lReXp5GjBghu92ugQMHqlevXqpevfpVf0ToF2XKlNGkSZM0YMAA/fOf/7xm3/r16ysoKEiRkZG6//77FRISIl9fX7300ksaPny4EhISVKNGDeXk5KhGjRrq1q2bevXqJcuyFBkZqerVq19zfAAAAADA9bFZXvisqMvl0tq1a/XUU0/pwoULeuyxx7Rx48ZCvw9aVJxOp2qf4weGUDzuajPA0yWUKqmpqTwBUYow36UL8126MN+lC/Nd/JxOp5o0aVKg3VwK8yA/Pz/t3r1bixcvlt1u15AhQ4wGTgAAAABA4bw2icXGxnq6BAAAAAAo9W7qPZ0AAAAAAFwLoRMAAAAAYAyhEwAAAABgDKETAAAAAGAMoRMAAAAAYAyhEwAAAABgDKETAAAAAGAMoRMAAAAAYIyvpwvwJne1GeDpElBMUlNTFRYW5ukyAAAAgFseK50AAAAAAGMInQAAAAAAYwidAAAAAABjCJ0AAAAAAGMInQAAAAAAYwidAAAAAABjCJ0AAAAAAGN4T2cRys5e5ukSYECFCj08XQIAAABQYrHSCQAAAAAwhtAJAAAAADCG0AkAAAAAMIbQCQAAAAAwhtAJAAAAADCG0AkAAAAAMIbQCQAAAAAwhtAJAAAAADCG0AkAAAAAMIbQCQAAAAAwpshCZ1xcnJYsWZKvLSoqSvv377/qPq+88oouXbqk9PR0JScnX/exOnfurLS0tHxtJ06cUL9+/dSrVy917dpVr732mlwulyRp3bp11xzvm2++0alTp677+AAAAACA6+PRlc4pU6aobNmy2rp16w2FzsJMnTpVnTt31pIlS5SUlCSHw6EvvvhCOTk5Wrhw4TX3XblyJaETAAAAAAzwLY6DrFq1Sk6nU6dPn9bhw4fVp08fRUZG6tFHH1ViYqKmT58uX19fVatWTffcc4/GjBkjm82m8uXLa/z48br99tv15ptvKjk5WSEhIcrJySlwjKysLJ07d879ecyYMZKk0aNHa9++fRo1apT+9re/aejQobpw4YIuXbqk2NhYZWdna8OGDfr+++8VFxenPXv2aP78+fL19VW9evUUExOj9PR0DRs2THa7Xbm5uZo0aZKqV69eHJcOAAAAAEq0YgmdkrR//3699957OnLkiF599VVFRkZKkm6//XZ16tRJd911lyIiIvTcc89pzJgxCgoKUmJiohITE9WuXTtt375dSUlJOnnypNq1a1dg/H79+mnAgAFatWqVWrVqpY4dO+qee+5Rnz59tGvXLo0aNUqHDx9WZGSk2rZtqy1btmju3LmKi4tTWFiYYmNjdccdd2jWrFlavny5/Pz8NGTIEDmdTiUnJ6tly5Z6+eWXlZKSooyMDEInAAAAAFwH46HTZrNJkho2bCgfHx8FBgYqOzv7qv2Tk5MVGxsrSXK5XKpfv74OHDigBg0ayG63q1q1aqpZs2aB/Ro2bKiNGzfqyy+/1ObNm9W1a1dNmTJFQUFB7j6VK1fWzJkzFR8fL5fLJX9//3xjHDhwQOnp6erTp48kKTs7W+np6WrVqpUGDhyo7OxsdejQQY0aNbrZywIAAAAApUKRhc6KFSvq7Nmz+dpOnz6tKlWq/Hwg3+s7VLly5bR48WJ3WJWkTz75RHb7/339NC8vr8B+ly5dUrly5dS2bVu1bdtWjRo10po1a/Tyyy+7+yxatEhVq1bVpEmTtHv3bk2cODHfGA6HQ/Xq1VN8fHyB8T/44AN9+eWXeuedd9SlSxc99dRT13U+AAAAAFCaFdkPCTVv3lwbNmzQxYsXJUnffvutKlSooDvvvPN397XZbO5fmg0NDdXmzZslSWvWrNGWLVsUHByslJQUWZalY8eO6dixY/n2z8vLU8eOHXXgwAF324kTJ1SjRg3Z7Xb3d0AzMzNVq1YtSdKGDRvc7b8cPzg4WAcPHnT/qNC0adN08uRJrVmzRt9//73atm2rIUOGaM+ePTdzqQAAAACg1Ciylc777rtPvXv3Vu/eveVwOFS+fHlNmjTpuvZt1KiRoqOjVblyZY0YMUKxsbGaO3euypQpo7ffflt33nmn6tSpo27duikoKEihoaH59rfb7Xr77bc1atQoSZJlWapZs6b+8Y9/yOFwKDc3V4MHD1bfvn0VHR2tdevW6ZlnntHHH3+slStXqnnz5nrllVc0c+ZMDR8+XP369ZOfn5/uv/9+BQQEKCgoSK+//rr8/f3l4+OjkSNHFtVlAwAAAACvZrMsy/J0Ed7A6XSqTp2rv5MUJVeFCj0KtKWmpiosLMwD1cATmO/ShfkuXZjv0oX5Ll2Y7+LndDrVpEmTAu0efU8nAAAAAMC7EToBAAAAAMYQOgEAAAAAxhA6AQAAAADGEDoBAAAAAMYQOgEAAAAAxhA6AQAAAADGEDoBAAAAAMYQOgEAAAAAxhA6AQAAAADG+Hq6AG9SoUIPT5cAAAAAALcUVjoBAAAAAMYQOgEAAAAAxhA6AQAAAADGEDoBAAAAAMYQOgEAAAAAxhA6AQAAAADGEDoBAAAAAMbwns4i9Ochiz1dwi1h3dRnPV0CAAAAgFsEK50AAAAAAGMInQAAAAAAYwidAAAAAABjCJ0AAAAAAGMInQAAAAAAYwidAAAAAABjCJ0AAAAAAGMInQAAAAAAYwidAAAAAABjCJ0AAAAAAGN8PV3AH3HkyBG99dZbOn36tPLy8tSoUSNFR0fLz8+vyI6xadMmrV+/XuPHjy+yMQEAAACgtClxK525ubkaNGiQ+vbtq6SkJK1cuVKSNGPGDA9XBgAAAAD4rRK30vnll1+qdu3aat68uSTJZrNp2LBhstvtGjdunJKTk3X58mX16NFDkZGRiomJUUBAgFJSUpSenq7JkyfrgQceKLTvvn37FB0drapVqyogIMB9zML6AgAAAAB+X4lb6Tx06JDCwsLytZUtW1aWZal69epatmyZli5dqqlTp7q3u1wuxcfH69lnn9X777+vy5cvF9p35syZGjhwoGbPni27/edLc7W+AAAAAIDfV+JWOqWfH7H9rTJlyujs2bPq3r27HA6HMjMz3duaNm0qSQoMDFRycvJV+x48eFCNGzeWJLVo0UKbN2++5rgAAAAAgGsrcaEzJCREiYmJ+dpcLpd27typrVu3KiEhQQ6HQ40aNXJv9/Hxcf9tWZa+/vrrQvtaliWbzSZJysvLk6Sr9gUAAAAA/L4S93htq1atdOzYMX3++eeSfg6HkyZN0htvvKHAwEA5HA5t3LhRubm5crlchY6RmZlZaN/g4GDt2bNHkrRt27Zr9gUAAAAA/L4SFzrtdrvi4+O1YsUKde7cWT179lSFChW0dOlS/fDDD+rVq5eOHj2qhx9+WKNGjSp0jJYtWxba96WXXtLkyZPVv39/ORyOa/YFAAAAAPw+m2VZlqeL8AZOp1MjFqd4uoxbwrqpz3q6BONSU1ML/KAVvBfzXbow36UL8126MN+lC/Nd/JxOp5o0aVKgvcStdAIAAAAASg5CJwAAAADAGEInAAAAAMAYQicAAAAAwBhCJwAAAADAGEInAAAAAMAYQicAAAAAwBhCJwAAAADAGEInAAAAAMAYQicAAAAAwBhfTxfgTdZNfdbTJQAAAADALYWVTgAAAACAMYROAAAAAIAxhE4AAAAAgDGETgAAAACAMYROAAAAAIAxhE4AAAAAgDGETgAAAACAMbynswjtDn7d0yV4TP3Doz1dAgAAAIBbECudAAAAAABjCJ0AAAAAAGMInQAAAAAAYwidAAAAAABjCJ0AAAAAAGMInQAAAAAAYwidAAAAAABjCJ0AAAAAAGMInQAAAAAAYwidAAAAAABjvDJ09u3bV61atdKmTZs8XQoAAAAAlGpeGTrnzZunhx56yNNlAAAAAECp5+vpAkzKy8vTiy++qAsXLujSpUuKjY1VeHi4Hn30UT311FPaunWr/Pz8NG3aNNntdg0dOrRA33bt2qlbt27atGmTXC6XFixYoNtuu83TpwYAAAAAJYJXrnT+4tixY4qMjFRCQoJeffVVzZ07170tJCRES5cuVWhoqFavXq2MjIxC++bm5qp27dpKTExUjRo1tHXrVk+dDgAAAACUOF690nn33Xdr/fr1io+Pl8vlkr+/v3vbn/70J0lSw4YNtXXrVnXu3FkzZ84stG/Tpk0lSYGBgcrOzi7ekwAAAACAEsyrVjqzsrLkcrkk/fxo7d69e1W1alUtW7ZMo0aNytfXsiz3/9psNi1atOiqfX18fArsBwAAAAD4fV4VOkePHq0NGzbIsiwdOnRIe/bsUa1atSRJGzZsUE5Ojruv0+mUJO3cuVP33nuvMjMzr9oXAAAAAPDHeFXoHDRokBYtWqQePXqoTZs2GjBggBYsWKAXXnhB4eHhysjI0MqVKyVJe/bs0XPPPad9+/bpySef1JNPPnnVvgAAAACAP8arvtMZFBSk5cuX52v75JNP3H9HRERIkmbMmKEXX3xR5cuXd28LDw8vtG+XLl3cbdHR0UbqBgAAAABv5VUrnQAAAACAW4tXrXRer88//9zTJQAAAABAqcBKJwAAAADAGEInAAAAAMAYQicAAAAAwBhCJwAAAADAGEInAAAAAMAYQicAAAAAwBhCJwAAAADAGEInAAAAAMAYX08X4E3qHx7t6RIAAAAA4JbCSicAAAAAwBhCJwAAAADAGEInAAAAAMAYQicAAAAAwBhCJwAAAADAGEInAAAAAMAYQicAAAAAwBje01mE/vl8fU+XUGQiF+72dAkAAAAAvAArnQAAAAAAYwidAAAAAABjCJ0AAAAAAGMInQAAAAAAYwidAAAAAABjCJ0AAAAAAGMInQAAAAAAYwidAAAAAABjCJ0AAAAAAGMInQAAAAAAYwidAAAAAABjfD1dwM1KS0tTx44dVa9ePXdbaGioRowY4cGqAAAAAACSF4ROSQoODlZCQoKnywAAAAAA/IZXhM7f2rZtm+bPn68LFy4oOjpaX3/9tdavX6+8vDy1adNGAwcOVFxcnLKzs3X48GH9+OOPGj58uNq0aaP3339fCQkJstvt6t27tx5//HF9+umnmj9/vnx9fVWvXj3FxMR4+hQBAAAAoETwytApSfv379f69evl5+enr7/+WkuXLpXdbldERISef/55SdKJEyc0d+5cbd68We+9956aNGmiGTNm6KOPPpLL5VJ0dLTatGmjWbNmafny5fLz89OQIUPkdDrVpEkTz54gAAAAAJQAXhE6Dx8+rKioKPfnli1bqm7duvLz85MklS1bVr169ZKvr68yMzN15swZSVLjxo0lSYGBgcrOztahQ4cUEhKismXLqmzZspo1a5Z27dql9PR09enTR5KUnZ2t9PR0QicAAAAAXAevCJ2//U7ntm3blJqaKkk6duyYFi5cqNWrV6t8+fJ64okn3P18ffOfvt1uV15eXr42h8OhevXqKT4+3uAZAAAAAIB38vpXpmRmZqpixYoqX768UlJSdOzYMeXk5BTat3bt2jp8+LDOnz+vy5cvq3fv3goKCtLBgwd16tQpSdK0adN08uTJ4jwFAAAAACixvGKl81rCwsJUvnx5de/eXU2aNFH37t01evToQh+P9ff31+DBg/XCCy/Isiw999xz8vf31/Dhw9WvXz/5+fnp/vvvV0BAgAfOBAAAAABKnhIfOmvUqKFVq1bla2vRooVatGghSfLx8fndR2Pr1Knjfjy3Y8eO6tixY77t7du3V/v27YuwagAAAAAoHbz+8VoAAAAAgOcQ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lGVZlvW///u/1pAhQzx2Lrg+V5vz7777rkA/5rzk27Jli9W3b1/Lsizr9OnTVps2bbjHvdjV5pv72zutWbPGmjNnjmVZlpWWlma1b9+e+/sWx+O1N2HLli1q27atJOnee+9VVlaWzp075+GqUBTOnz9foG3btm2KiIiQJEVERGjLli3atWuX6tevrwoVKqhs2bJq2rSptm/fXtzl4g/w8/PT3LlzFRAQ4G67kTnesmWL2rVrJ0l68MEH+QXrEqCwOS/sXmfOvUOzZs00depUSdIdd9yhixcvco97scLmOysrq0A/5ts7PP744+rXr58k6fjx46patSr39y2Ox2tvwk8//aQHHnjA/blSpUrKyMjQbbfd5sGqUBQuXLggp9Opvn376uLFixo0aJAuXrwoPz8/SVKVKlWUkZGhn376SRUrVnTvV7lyZWVkZHiqbNwAX19f+frm/1fgjczxr9t9fHxkt9vlcrnc++PWU9icnz9/XtOnT1dWVpaqVq2qkSNHMudewsfHR/7+/pKkf/7zn2rdurX+/e9/c497qcLm+/Tp09zfXq579+46ceKE3n33XfXu3Zv7+xZG6LwJ1m/eNmNZlmw2m4eqQVEKDQ3Vyy+/rIiICB0+fFi9e/fWlStX3Nt/mXv+GfAuv56735tj5t47dO/eXffee6+Cg4M1a9YsxcXFqUGDBvn6MOcl24YNG5SUlKT58+erQ4cO7nbuce/06/neunUr97eXe++995Samqphw4bx3/BbHI/X3oSqVavqp59+cn/+z3/+o8qVK3uwIhSVkJAQ9yMawcHBqly5srKysnTp0iVJ0smTJxUQEFDoPwNVqlTxSM24eeXKlbvuOa5atap7VTsnJ0eWZcnhcHikbvxx7dq1U3BwsPvvffv2Mede5IsvvtC7776ruXPnqkKFCtzjXu6388397b327Nmj48ePS5LCwsKUm5vL/X2LI3TehFatWmn9+vWSpO+++04BAQE8WuslkpKStHjxYklSRkaGTp06pc6dO7vn+9NPP9VDDz2kBg0aaPfu3crKytL58+e1fft2NW3a1JOl4ya0bNnyuue4VatWWrdunSRp06ZNatGihSdLxx/03//930pPT5f083d677vvPubcS2RnZ2vixImaPXu27rzzTknc496ssPnm/vZe3377rebPny/p56+7Xbhwgfv7Fmezfru+jBsyefJkffvtt7LZbHr99dcVGhrq6ZJQBM6ePau//e1vunDhglwulwYOHKiwsDBFR0fr8uXLuvvuuzVu3Dg5HA6tW7dO8fHxstls6tWrl/761796unxchz179mjChAk6duyYfH19VbVqVU2ePFkxMTHXNce5ubkaOXKkjhw5Ij8/P40fP17VqlXz9GnhGgqb8x49eig+Pl7+/v4qV66cxo0bp0qVKjHnXmD58uWKi4tzr3RJ0vjx4zVy5EjucS9U2Hx36dJFCQkJ3N9e6NKlSxoxYoSOHz+uS5cuaeDAgapXr951//805rv4EToBAAAAAMbweC0AAAAAwBhCJwAAAADAGEInAAAAAMAYQicAAAAAwBhCJwAAAADAGF9PFwAAAAo6cuSI3nrrLZ0+fVp5eXlq1KiRoqOj5efnd1Pjpqen66efflJ4eHgRVQoAwLWx0gkAwC0mNzdXgwYNUt++fZWUlKSVK1dKkmbMmHHTY2/dulXJyck3PQ4AANeLlU4AAG4xX375pWrXrq3mzZtLkmw2m4YNGya73a5FixZp7dq1kqSIiAj1799fMTEx6tChgx555BFt2rRJ69ev18CBAxUTE6OaNWtq3759CgsL09ChQzV9+nT5+vqqWrVqioiI8ORpAgBKCUInAAC3mEOHDiksLCxfW9myZXX06FGtXr1aSUlJkqTIyEj9+c9/vuo4KSkpmjJliipVqqTWrVsrOjpanTp10l133UXgBAAUG0InAAC3oNzc3AJtqampatCggXx9f/7Pd3h4uPbu3XvVMWrVqqUqVapIkgICApSdnW2mWAAAroHvdAIAcIsJCQnR7t2787W5XC59//33sizL3WZZlux2u2w2m7vtypUr7r99fHzyjfHrfQEAKC6ETgAAbjGtWrXSsWPH9Pnnn0uS8vLyNGnSJB05ckQ7d+7UlStXdOXKFe3atUthYWEqX768MjIyJElOp/OaY9tsNrlcLuPnAADALwidAADcYux2u+Lj47VixQp17txZPXv2VIUKFTRhwgR169ZNvXr10jPPPKPIyEhVr15dTz75pOLj49WnTx/3o7dX06hRI82fP18ffvhhMZ0NAKC0s1k8awMAAAAAMISVTgAAAACAMYROAAAAAIAxhE4AAAAAgDGETgAAAACAMYROAAAAAIAxhE4AAAAAgDGETgAAAACAMYROAAAAAIAx/w9jDFivJ/RWQQAAAABJRU5ErkJggg==
 "
 >
 </div>
@@ -15971,7 +14138,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[146]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">country_count</span><span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">country_count</span><span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
@@ -15992,7 +14159,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[146]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -16025,7 +14192,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can see that the largest number of Movies/TV Shows comes from United States. It has triple number of Movies/TV Shows than India has. Spain, South Korea and Germany have the same the number of Movies/TV Shows on Netflix. Nice!</p>
+<p>We can see that the largest number of Movies/TV Shows comes from United States. It has triple number of Movies/TV Shows than India has. Spain, South Korea and Germany have the same the number of Movies/TV Shows on Netflix. Actually fun!</p>
 
 </div>
 </div>
@@ -16039,7 +14206,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[149]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">updated_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -16071,7 +14238,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[150]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">updated_df</span><span class="p">[</span><span class="n">updated_df</span><span class="p">[</span><span class="s2">&quot;cast&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s2">&quot;Cameron Diaz&quot;</span><span class="p">)]</span>
@@ -16087,7 +14254,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[150]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -16273,7 +14440,7 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[242]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">=</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;type&#39;</span><span class="p">,</span><span class="s1">&#39;release_year&#39;</span><span class="p">]]</span>
@@ -16310,13 +14477,13 @@ Rating:  [&#39;PG-13&#39; &#39;TV-MA&#39; &#39;PG&#39; &#39;TV-14&#39; &#39;TV-P
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[242]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.legend.Legend at 0x7f1c18a24e48&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x7f0a2dd69748&gt;</pre>
 </div>
 
 </div>
