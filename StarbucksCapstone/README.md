@@ -34,14 +34,10 @@ This is the Capstone project for the Udacity Data Science Nanodegree.
 The basis or this project is simulated data that mimics customer behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free).  
 In particular, the data consists of information on the different offers, on customer demographics, and on offer and transaction events.  
 
-Utilizing this data, **my goal** is:
-
-Can we classify if an offer is going to be successful based on demographic and offer information?
-- Build a machine learning model predicting offer success based on the demographic information and the offer details that are provided in the data
-
-and Answer following questions:
-- Which offer is the most successful?
-- Who spends more money? male or female?
+So I will:
+- Explore the data to get more information of data, such as how many men, women there or the information of average income of customers..
+- Build a model to predict offer is successful or not based on demographic and offer information that are provided in the data
+- Give conclusion and suggestion
  
 ## Libraries used <a name="Libraries"></a>
 Libraries
